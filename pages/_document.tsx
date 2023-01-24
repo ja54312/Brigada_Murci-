@@ -8,7 +8,7 @@ class MyDocument extends Document {
                 <Head>
                     <meta name="description" content="Una App para Brigada Murci" />
                     <meta name="robots" content="index,follow" />
-                    {/* <link rel="icon" type="image/png" href="/images/nota-musical.png"/> */}
+                    <link rel="icon" type="image/png" href="/images/BrigadaMurciLogo.png" />
                 </Head>
                 <body className="my-body-class">
                     <Main />
