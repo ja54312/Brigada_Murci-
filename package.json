@@ -4,10 +4,10 @@
   "description": "App para Brigada Murci",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
-    "build": "next build && next export",
-    "deploy": "gh-pages -d out"
+    "lint": "next lint"
   },
   "repository": {
     "type": "git",
@@ -20,14 +20,18 @@
     "url": "https://github.com/ja54312/Brigada_Murci-/issues"
   },
   "dependencies": {
+    "@next/font": "13.1.5",
     "gh-pages": "^4.0.0",
-    "next": "^12.3.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "eslint": "8.32.0",
+    "eslint-config-next": "13.1.5",
+    "next": "13.1.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@types/node": "18.7.23",
-    "@types/react": "18.0.21",
-    "typescript": "^4.8.4"
+    "@types/node": "18.11.18",
+    "@types/react-dom": "18.0.10",
+    "@types/react": "18.0.27",
+    "typescript": "^4.9.4"
   }
 }

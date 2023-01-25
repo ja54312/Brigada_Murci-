@@ -1,12 +1,9 @@
 import Prueba from '../react/components/PRUEBA/Prueba'
 
-const Home = () => {
-
+export default function Home() {
     return (
         <>
             <Prueba />
         </>
     )
 }
-
-export default Home
