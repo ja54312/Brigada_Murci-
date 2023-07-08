@@ -1,0 +1,10 @@
+/*DESKTOP*/
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--footer-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
