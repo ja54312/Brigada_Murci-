@@ -2,12 +2,20 @@
 import { Inter } from "next/font/google";
 //Components
 import Head from "next/head";
-import Prueba from "@/components/Prueba/Prueba";
 import ClientOnly from "@/components/ClientOnly/ClientOnly";
+import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
+import BuscandoMejorAmigo from "@/components/BuscandoMejorAmigo/BuscandoMejorAmigo";
+//Hooks
+import { useRouter } from "next/router";
+import useDevice from '@/hooks/useDevice';
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const { device } = useDevice();
+  const router = useRouter()
+  //const haciaAdmin = () => router.push('/admin')
   return (
     <>
       <Head>
@@ -17,7 +25,9 @@ export default function Home() {
         <link rel="icon" href="/BrigadaMurciLogoV.png" />
       </Head>
       <ClientOnly>
-        <Prueba />
+        <Header/>
+        <BuscandoMejorAmigo/>
+        <Footer/>
       </ClientOnly>
     </>
   );
