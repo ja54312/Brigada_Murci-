@@ -1,10 +1,14 @@
 /*DESKTOP*/
 .footer{
     width: 100%;
-    height: auto;
+    height: 50px;
     background-color: var(--footer-color);
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    position: relative;
+}
+.footer span,
+.footer a{
+    background-color: inherit;
 }

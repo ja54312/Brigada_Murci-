@@ -12,6 +12,7 @@ import styles from './NavBar.module.css'
 const NavBar = () => {
     const router = useRouter()
   const haciaNosotros = () => router.push('/nosotros')
+  const haciaDonacion = () => router.push('/donacion')
   const haciaAdoptable = () => router.push('/adoptable')
 
   return (
@@ -22,7 +23,7 @@ const NavBar = () => {
             </div>
             <span>¿Quiénes somos?</span>
         </div>
-        <div className={styles.containerQuestionNavBar}>
+        <div className={styles.containerQuestionNavBar} onClick={() => haciaDonacion()}>
             <div className={styles.containerImgaeNavBar}>
                 <Image src={huellita} alt='huellita' width={30} height={30}/>
             </div>

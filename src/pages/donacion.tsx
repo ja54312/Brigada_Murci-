@@ -5,7 +5,7 @@ import Head from "next/head";
 import ClientOnly from "@/components/ClientOnly/ClientOnly";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
-const nosotros = () => {
+const donacion = () => {
   return (
     <>
       <Head>
@@ -16,11 +16,11 @@ const nosotros = () => {
       </Head>
       <ClientOnly>
         <Header />
-        <div>somos brigada murci adoptable adopta muchos perritos porfa</div>
+        <div>Aqui donaras money para que la GAbiis se apure y me pase el UXUI para que quede chida la pagina</div>
         <Footer />
       </ClientOnly>
     </>
   );
 };
 
-export default nosotros;
+export default donacion;
