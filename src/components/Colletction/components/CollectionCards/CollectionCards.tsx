@@ -22,7 +22,7 @@ const CollectionCards: React.FC<CollectionCardsProps> = ({ data }) => {
             src={data.imagenPet}
             alt="imagen de animal"
             width={220}
-            height={100}
+            height={150}
           />
         </div>
         <div className={styles.containerCardInfoText}>
