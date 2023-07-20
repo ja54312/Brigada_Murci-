@@ -15,7 +15,7 @@ const Logo = () => {
   const haciaHome = () => router.push("/");
   return (
     <div className={styles.containerLogo} onClick={() => haciaHome()}>
-      <Image src={logo} alt="Logo Brigada Murci" width={350} height={50} />
+      <Image src={logo} alt="Logo Brigada Murci" width={350} height={60} />
     </div>
   );
 };

@@ -1,18 +1,22 @@
+"use client"
 //Librerias
 import React from 'react'
-//Hooks
-import { useRouter } from "next/router";
+//Components
+import CardSeacrhResult from './components/CardSeacrhResult';
 //Styles
 import styles from './BuscandoMejorAmigo.module.css'
+//DataBase
+import { perrosExample as data} from '../../../database/examples/perrosExample';
+//Models
+import { DEVICE } from '../../../tsModels/useDevice.model';
+interface BuscandoMejorAmigoProps {
+  device : DEVICE | undefined
+}
 
-const BuscandoMejorAmigo = () => {
+const BuscandoMejorAmigo:React.FC<BuscandoMejorAmigoProps> = ({device}) => {
 
-  const router = useRouter()
-  const haciaPerros = () => router.push('/perros')
-  const haciaGatos = () => router.push('/gatos')
-
-  return (
-    <section className={styles.sectionBuscandoMejorAmigo}>
+if(device === 'desktop'){
+    {/* <section className={styles.sectionBuscandoMejorAmigo}>
         <h1>¿Estás buscando a tú mejor amigo?</h1>
         <div className={styles.containerBox}>
             <div className={styles.containerBoxTitle}>¿Perro o gato?</div>
@@ -30,8 +34,41 @@ const BuscandoMejorAmigo = () => {
             vigente acorde a su edad). Deberás estar 100% comprometido con su bienestar al iniciar con un proceso de adopción.
         </p>
         </div>
+    </section> */}
+  return null
+}
+if(device === 'tablet'){
+  return null
+}
+if(device === 'phone'){
+  return(
+    <section className={styles.sectionBuscandoMejorAmigoMobile}> 
+      <div className={styles.containerBuscandoMejorAmigoMobile}>
+        <div className={styles.containerTitleCategories}>
+          <div className={styles.titleCategories}>Categorías</div>
+          <div className={styles.titleCategories} style={{cursor:'pointer'}}>Mostrar Todos</div>
+        </div>
+        <div className={styles.categoriesCategories}>
+          <div className={styles.categoriesCard}>
+            <div className={styles.categoriesCardImage}>imagen</div>
+            <div className={styles.categoriesCardText}>Perros</div>
+          </div>
+          <div className={styles.categoriesCard}>
+            <div className={styles.categoriesCardImage}>imagen</div>
+            <div className={styles.categoriesCardText}>Gatos</div>
+          </div>
+        </div>
+        <div className={styles.containerSearchResult}>
+          {data && data.length >0 && data.map((el)=>{
+           return <CardSeacrhResult key={el._id} data={el}/>
+          })}
+        </div>
+      </div>
     </section>
   )
+}else {
+  return null
+}
 }
 
 export default BuscandoMejorAmigo

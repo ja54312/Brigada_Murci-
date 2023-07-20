@@ -9,4 +9,5 @@
 }
 .containerLogo img{
     cursor: pointer;
+    background-color: inherit;
 }

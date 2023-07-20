@@ -15,9 +15,9 @@ const ContadorDiasDeEspera: React.FC<ContadorDiasDeEsperaProps> = ({ diaQueLlego
   let diferenciaDias = Math.round(diferenciaMilisegundos / (24 * 60 * 60 * 1000));
   //console.log(diferenciaDias)
   return (
-    <section className={styles.sectionContador}>
-      <span className={styles.infoContador}>
-        <strong>{diferenciaDias}</strong> dias en espera de un hogar
+    <section className={styles.sectionContadorMobile}>
+      <span className={styles.infoContadorMobile}>
+         I  <strong>{diferenciaDias}</strong> dias en espera de un hogar
       </span>
     </section>
   );

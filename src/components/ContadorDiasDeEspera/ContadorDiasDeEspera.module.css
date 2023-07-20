@@ -1,0 +1,22 @@
+/*DESKTOP*/
+.sectionContador{
+    width: 100%;
+}
+.infoContador{
+    font-size: 14px;
+}
+/*TABLET*/
+/*MOBILE*/
+.sectionContadorMobile{
+    width: 100%;
+    height: auto;
+    background-color: inherit;
+}
+.infoContadorMobile{
+    font-size: 10px;
+    color: #939393;
+    background-color: inherit;
+}
+.infoContadorMobile strong {
+    background-color: inherit;
+}

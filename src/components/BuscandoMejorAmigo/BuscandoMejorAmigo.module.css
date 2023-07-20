@@ -62,3 +62,125 @@
     padding: 10px 0;
     text-align: center;
 }
+/*TABLET*/
+/*MOBILE*/
+.sectionBuscandoMejorAmigoMobile{
+    width: 100%;
+    height: auto;
+}
+.containerBuscandoMejorAmigoMobile{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.containerTitleCategories{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.titleCategories{
+    color:var(--border-card-color) ;
+    font-size: 18px;
+}
+.categoriesCategories{
+    width: 100%;
+    height: auto;
+    background-color: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+.categoriesCard{
+    width: 45%;
+    height: 100px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.categoriesCardImage{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+    border-radius: inherit;
+}
+.categoriesCardText{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+    border-radius: inherit;
+    color: var(--border-card-color);
+    font-size: 18px;
+}
+.containerSearchResult{
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    background-color: inherit;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+/*CARD*/
+.cardSearchResult{
+    width: 48%;
+    height: 200px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.containerInfoSearchResult{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: inherit;
+    border-radius: inherit;
+}
+.containerImageCard{
+    width: 100%;
+    height: 60%;
+    padding-top: 10px;
+    background-color: inherit;
+    border-radius: inherit;
+}
+.containerImageCard img{
+    border-radius: 15px;
+}
+.containerInfoCard{
+    width: 100%;
+    height: auto;
+    background-color: inherit;
+    border-radius: inherit;
+}
+.titleCard{
+    width: 100%;
+    height: auto;
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 3px;
+    background-color: inherit;
+}
+.infoCard{
+    width: 100%;
+    height: auto;
+    background-color: inherit;
+    font-size: 13px;
+}

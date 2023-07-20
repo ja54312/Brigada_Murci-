@@ -6,10 +6,11 @@
 }
 
 :root {
-  --fondo-color: #b7cddb;
-  --header-color: #ffffff;
+  --fondo-color: #F6F6FF;
+  --header-color: #FFFFFF;
   --text-navbar-color: #f3f8fb;
-  --card-color: #675cb0;
+  --card-color: #7A6BBC;
+  --cardText-color: #F6F6FF;
   --border-card-color: #675cb0;
   --footer-color: #ffffff;
   --text-footer-color: #f3f8fb;
