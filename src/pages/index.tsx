@@ -29,8 +29,8 @@ export default function Home() {
           <DeviceUnvailable device={device}/>
           <Header device={device}/>
           <Banner device={device}/>
-          {/* <BuscandoMejorAmigo />
-          <Footer /> */}
+          <BuscandoMejorAmigo device={device}/>
+          {/* <Footer /> */}
         </ClientOnly>
       </>
     );
