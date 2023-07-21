@@ -1,0 +1,57 @@
+/*DESKTOP*/
+/*TABLET*/
+/*MOBILE*/
+.sectionCardPDPMobile{
+    padding-top: 10px;
+    width: 100%;
+    height: auto;
+}
+.containerCardPDPMobile{
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+}
+.containerImageCardPDPMobile{
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 15px 15px 0 0;
+}
+.containerImageCardPDPMobile img{
+    border-radius: 15px;
+}
+.containerInfoCardMobile{
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 0 0 15px 15px;
+}
+.containerTitlesCardMobile{
+    width: 100%;
+    height: auto;
+    background-color: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.titleNameMobile{
+    background-color: inherit;
+    font-weight: bold;
+    font-size: 20px;
+}
+.titleBrigadaMobile{
+    background-color: inherit;
+    font-size: 10px;
+    color: #939393;
+}
+.containerGenderMobile{
+    background-color: inherit;
+}

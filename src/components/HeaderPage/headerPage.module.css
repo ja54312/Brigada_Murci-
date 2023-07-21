@@ -1,0 +1,32 @@
+/*DESKTOP*/
+/*TABLET*/
+/*MOBILE*/
+.headerPageMobile{
+    width: 100%;
+    height: auto;
+    background-color: var(--header-color);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 25px 0;
+}
+.headercontainerArrow{
+    width: 15%;
+    height: auto;
+    background-color: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.headercontainerCollection{
+    width: 70%;
+    height: auto;
+    background-color: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    color:var(--border-card-color) ;
+}

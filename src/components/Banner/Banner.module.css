@@ -50,6 +50,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  border-radius: 15px;
 }
 .containerCardsGeneralMobile
   .cardBannerMobile
@@ -75,6 +76,62 @@
   background-color: inherit;
   width: 100%;
   height: 30%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+}
+.containerCardsGeneralMobile .cardBannerMobile .cardBanner01 .cardBannerImage img{
+  background-color: inherit;
+  width: 269px;
+  height: 48px;
+}
+.cardBannerMobile .cardBanner02{
+  background-color: inherit;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  border-radius: 15px;
+}
+.cardBanner02 .cardBannerInfo,
+.cardBanner03 .cardBannerInfo{
+  background-color: inherit;
+  width: 70%;
+  height: auto;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardBanner02 .cardBannerInfo span,
+.cardBanner03 .cardBannerInfo span{
+  background-color: inherit;
+    color: var(--cardText-color);
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0 15px;
+}
+.cardBanner02 .cardBannerImage,
+.cardBanner03 .cardBannerImage{
+  background-color: inherit;
+  width: 40%;
+  height: 60%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+}
+.cardBanner02 .cardBannerImage img,
+.cardBanner03 .cardBannerImage img{
+  background-color: inherit;
+}
+.cardBannerMobile .cardBanner03{
+  background-color: inherit;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 15px;
 }
 .containerPuntosMobile {
   width: 100%;

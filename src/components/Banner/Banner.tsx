@@ -7,6 +7,7 @@ import CardBanner from './components/CardBanner'
 import styles from './Banner.module.css'
 //Models
 import { DEVICE } from '../../../tsModels/useDevice.model'
+import { setTimeout } from 'timers/promises'
 interface BannerProps {
     device:DEVICE | undefined
 }
@@ -18,13 +19,16 @@ const Banner:React.FC<BannerProps> = ({device}) => {
 
     const dataBanner = [
         {
-            textCard:'¿Estás buscando a tu nuevo mejor amigo?'
+            textCard:'¿Estás buscando a tu nuevo mejor amigo?',
+            bannerCard:'/banner01.png'
         },
         {
-            textCard:'Todos los animalitos que encontrarás en este sitio fueron rescatados de la calle en alguna condición extrema de maltrato y / o abandono.'
+            textCard:'Todos los animalitos que encontrarás en este sitio fueron rescatados de la calle en alguna condición extrema de maltrato y / o abandono.',
+            bannerCard:'/banner02.png'
         },
         {
-            textCard:'Deberás estar 100% comprometido con su bienestar al iniciar un proceso de adopción.'
+            textCard:'Deberás estar 100% comprometido con su bienestar al iniciar un proceso de adopción.',
+            bannerCard:'/banner03.png'
         }
     ]
 
@@ -47,6 +51,12 @@ const Banner:React.FC<BannerProps> = ({device}) => {
       useEffect(() => {
         setLeftCarrusel(width* -position)
       }, [position,width]);
+
+
+        // setInterval(() => {
+        //   setPosition(position +1)
+        // }, 3000);
+
 
       let colorPoint0:string = position === 0 ? '#7A6BBC' : '#DDDDDD'
       let colorPoint1:string = position === 1 ? '#7A6BBC' : '#DDDDDD'
@@ -75,7 +85,7 @@ const Banner:React.FC<BannerProps> = ({device}) => {
                             dataBanner && dataBanner.map((element,key)=>{
                                 return(
                                     <div  key={key} className={styles.itemCard} style={{ width: `${width}px` }}>
-                                        <CardBanner data={element}/>
+                                        <CardBanner data={element} position={position}/>
                                     </div>
                                 )
                             })

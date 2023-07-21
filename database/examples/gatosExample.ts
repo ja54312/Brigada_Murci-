@@ -1,7 +1,7 @@
 import { Adoption } from './../../tsModels/adoption.model';
 interface AdoptionCollection extends Array<Adoption> {}
 export const gatosExample:AdoptionCollection = [
-    {  _id : '1',
+    {  _id : 'cat01',
       fechaCreacion: '2023-07-08T06:00:00.000+00:00',
       collection: 'gato',
       namePet:'cuca',
@@ -13,7 +13,7 @@ export const gatosExample:AdoptionCollection = [
       energyPet:'Media',
       description:'Fui rescatada por Brigada Murci en enero 2021 después que un vecino de la comunidad reporto que fui atacada con un arma de fuego directo a la cara.'
   },
-  {  _id : '2',
+  {  _id : 'cat02',
       fechaCreacion: '2023-07-08T06:00:00.000+00:00',
       collection: 'gato',
       namePet:'cuca',
@@ -25,7 +25,7 @@ export const gatosExample:AdoptionCollection = [
       energyPet:'Media',
       description:'Fui rescatada por Brigada Murci en enero 2021 después que un vecino de la comunidad reporto que fui atacada con un arma de fuego directo a la cara.'
   },
-  {  _id : '3',
+  {  _id : 'cat03',
       fechaCreacion: '2023-07-08T06:00:00.000+00:00',
       collection: 'gato',
       namePet:'cuca',
@@ -37,7 +37,7 @@ export const gatosExample:AdoptionCollection = [
       energyPet:'Media',
       description:'Fui rescatada por Brigada Murci en enero 2021 después que un vecino de la comunidad reporto que fui atacada con un arma de fuego directo a la cara.'
   },
-  {  _id : '4',
+  {  _id : 'cat04',
       fechaCreacion: '2023-07-08T06:00:00.000+00:00',
       collection: 'gato',
       namePet:'cuca',
@@ -49,7 +49,7 @@ export const gatosExample:AdoptionCollection = [
       energyPet:'Media',
       description:'Fui rescatada por Brigada Murci en enero 2021 después que un vecino de la comunidad reporto que fui atacada con un arma de fuego directo a la cara.'
   },
-  {  _id : '5',
+  {  _id : 'cat05',
       fechaCreacion: '2023-07-08T06:00:00.000+00:00',
       collection: 'gato',
       namePet:'cuca',
@@ -61,7 +61,7 @@ export const gatosExample:AdoptionCollection = [
       energyPet:'Media',
       description:'Fui rescatada por Brigada Murci en enero 2021 después que un vecino de la comunidad reporto que fui atacada con un arma de fuego directo a la cara.'
   },
-  {  _id : '6',
+  {  _id : 'cat06',
       fechaCreacion: '2023-07-08T06:00:00.000+00:00',
       collection: 'gato',
       namePet:'cuca',
