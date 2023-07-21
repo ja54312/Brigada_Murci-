@@ -40,7 +40,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .titleNameMobile{
     background-color: inherit;
@@ -54,4 +54,79 @@
 }
 .containerGenderMobile{
     background-color: inherit;
+}
+.containerCardPDPMobile  .infoContadorMobile{
+    font-size: 15px;
+    color: #EA79E9;
+    background-color: inherit;
+    letter-spacing: 0;
+}
+.containerStatsMobile{
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: inherit;
+}
+.cardStatsMobile{
+    border-radius: 15px;
+    width: 30%;
+    height: 70px;
+}
+.containerStatsImageMobile{
+    width: auto;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: inherit;
+}
+.containerStatsInfoMobile{
+    width: auto;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: inherit;
+}
+.containerDescriptionCardMobile{
+    padding-top: 15px;
+    width: 100%;
+    height: 60px;
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #BDBDBD;
+}
+.containerDescriptionCardMobile span{
+    background-color: inherit;
+    font-size: 14px;
+}
+.containerConvivenciaCardMobile{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.containerImageConvivenciaMobile{
+    height: 50%;
+    border-radius: inherit;
+}
+.containerInfoConvivenciaMobile{
+    height: 50%;
+    border-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.containerInfoConvivenciaMobile span{
+    color: #EA79E9;
 }

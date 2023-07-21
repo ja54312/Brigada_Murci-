@@ -22,3 +22,10 @@
     background-color: inherit;
     font-size: 13px;
 }
+/*PDP*/
+.containerCardPDPMobile  .infoContadorMobile{
+    font-size: 15px;
+    color: #EA79E9;
+    background-color: inherit;
+    letter-spacing: 0;
+}
