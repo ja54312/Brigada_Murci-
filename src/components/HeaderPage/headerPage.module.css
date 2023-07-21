@@ -19,6 +19,9 @@
     align-items: center;
     justify-content: center;
 }
+.headercontainerArrow img{
+    background-color: inherit;
+}
 .headercontainerCollection{
     width: 70%;
     height: auto;

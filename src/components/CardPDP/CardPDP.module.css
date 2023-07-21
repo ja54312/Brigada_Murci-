@@ -55,12 +55,6 @@
 .containerGenderMobile{
     background-color: inherit;
 }
-.containerCardPDPMobile  .infoContadorMobile{
-    font-size: 15px;
-    color: #EA79E9;
-    background-color: inherit;
-    letter-spacing: 0;
-}
 .containerStatsMobile{
     width: 100%;
     height: auto;
@@ -91,6 +85,10 @@
     align-items: center;
     border-radius: inherit;
 }
+.containerStatsInfoMobile span{
+    color:#7A6BBC;
+    font-size: 18px;
+}
 .containerDescriptionCardMobile{
     padding-top: 15px;
     width: 100%;
@@ -105,6 +103,8 @@
 .containerDescriptionCardMobile span{
     background-color: inherit;
     font-size: 14px;
+    text-align: center;
+    font-weight: bold;
 }
 .containerConvivenciaCardMobile{
     width: 100%;
@@ -118,6 +118,10 @@
 .containerImageConvivenciaMobile{
     height: 50%;
     border-radius: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
 }
 .containerInfoConvivenciaMobile{
     height: 50%;
@@ -126,7 +130,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 50px;
 }
 .containerInfoConvivenciaMobile span{
     color: #EA79E9;
+    font-weight: bold;
+    text-align: center;
 }

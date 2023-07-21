@@ -4,6 +4,12 @@ import React from "react";
 //Components
 import Image from "next/image";
 import ContadorDiasDeEspera from "../ContadorDiasDeEspera/ContadorDiasDeEspera";
+//Icons
+import rayos from '../../../public/rayos.png'
+import pastel from '../../../public/pastel.png'
+import balanza from '../../../public/balanza.png'
+import perro from '../../../public/perro.png'
+import gato from '../../../public/gato.png'
 //Styles
 import styles from "./CardPDP.module.css";
 //Models
@@ -14,6 +20,10 @@ interface CardPDPProps {
   namePet: string;
   genderPet: string;
   diaQueLlego: Date;
+  energyPet:string
+  sizePet:string
+  agePet:string
+  description00:string
 }
 
 const CardPDP: React.FC<CardPDPProps> = ({
@@ -22,6 +32,10 @@ const CardPDP: React.FC<CardPDPProps> = ({
   namePet,
   genderPet,
   diaQueLlego,
+  energyPet,
+  sizePet,
+  agePet,
+  description00
 }) => {
   if (device === "desktop") {
     return null;
@@ -47,30 +61,30 @@ const CardPDP: React.FC<CardPDPProps> = ({
               {/* <div className={styles.titleBrigadaMobile}>Rescatado por Brigada Murci</div> */}
               <div className={styles.containerGenderMobile}>{genderPet}</div>
             </div>
-            <ContadorDiasDeEspera diaQueLlego={diaQueLlego} />
+            <ContadorDiasDeEspera diaQueLlego={diaQueLlego} pdp/>
             <div className={styles.containerStatsMobile}>
               <div className={styles.cardStatsMobile}>
                 <div className={styles.containerStatsImageMobile}>
-                  <div>imagen</div>
+                  <Image src={rayos} alt="rayo" width={50} height={30}/>
                 </div>
                 <div className={styles.containerStatsInfoMobile}>
-                  <span>texto</span>
+                  <span>{energyPet}</span>
                 </div>
               </div>
               <div className={styles.cardStatsMobile}>
                 <div className={styles.containerStatsImageMobile}>
-                  <div>imagen</div>
+                <Image src={pastel} alt="rayo" width={50} height={30}/>
                 </div>
                 <div className={styles.containerStatsInfoMobile}>
-                  <span>texto</span>
+                  <span>{agePet}</span>
                 </div>
               </div>
               <div className={styles.cardStatsMobile}>
                 <div className={styles.containerStatsImageMobile}>
-                  <div>imagen</div>
+                <Image src={balanza} alt="rayo" width={50} height={30}/>
                 </div>
                 <div className={styles.containerStatsInfoMobile}>
-                  <span>texto</span>
+                  <span>{sizePet}</span>
                 </div>
               </div>
             </div>
@@ -82,7 +96,8 @@ const CardPDP: React.FC<CardPDPProps> = ({
             </div>
             <div className={styles.containerConvivenciaCardMobile}>
               <div className={styles.containerImageConvivenciaMobile}>
-                <div>imagen</div>
+                <Image src={perro} alt="perro" width={50} height={50}/>
+                <Image src={gato} alt="gato" width={50} height={50}/>
               </div>
               <div className={styles.containerInfoConvivenciaMobile}>
                 <span>Convive con otros perritos, cachorros y adultos y gatos.</span>

@@ -3,6 +3,10 @@
 import React from 'react'
 //Hooks
 import { useRouter } from "next/router";
+//Component
+import Image from 'next/image';
+//Icon
+import flecha from '../../../public/flecha.png'
 //Styles
 import styles from './headerPage.module.css'
 //Models
@@ -31,7 +35,9 @@ const HeaderPage:React.FC<HeaderPageProps> = ({device,collection}) => {
     if(device === 'phone'){
         return (
           <header className={styles.headerPageMobile}>
-            <div className={styles.headercontainerArrow} onClick={()=>haciaHome()}>*v==*</div>
+            <div className={styles.headercontainerArrow} onClick={()=>haciaHome()}>
+                <Image src={flecha} alt='flecha' width={50} height={50}/>
+            </div>
             <div className={styles.headercontainerCollection}>{petCollection}</div>
           </header>
         )
