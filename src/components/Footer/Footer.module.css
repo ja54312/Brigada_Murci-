@@ -12,3 +12,20 @@
 .footer a{
     background-color: inherit;
 }
+/*TABLET*/
+/*MOBILE*/
+.footerMobile{
+    width: 100%;
+    height: 50px;
+    background-color: var(--footer-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #FFFFFF;
+}
+.footerMobile span,
+.footerMobile a{
+    background-color: inherit;
+    color: #FFFFFF;
+}

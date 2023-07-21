@@ -11,6 +11,10 @@
     width: 100%;
     height: auto;
     background-color: inherit;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 5px;
 }
 .infoContadorMobile{
     font-size: 12px;
@@ -18,7 +22,39 @@
     background-color: inherit;
     letter-spacing: -1px;
 }
+.miniContainerImage{
+    width: 10%;
+    background-color: inherit;
+    padding-right: 5px;
+}
+.infoContadorMobile img{
+    background-color: inherit;
+    padding-top:5px ;
+}
 .infoContadorMobile strong {
     background-color: inherit;
     font-size: 13px;
+}
+/*PDP*/  
+.infoContadorMobilePDP{
+    font-size: 15px;
+    color: #EA79E9;
+    background-color: inherit;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.infoContadorMobilePDP strong {
+    background-color: inherit;
+    font-size: 20px;
+}
+.miniContainerImagePDP{
+    width: 10%;
+    background-color: inherit;
+    padding-right: 5px;
+}
+.infoContadorMobilePDP img{
+    background-color: inherit;
+    padding-top:5px ;
 }

@@ -6,10 +6,7 @@ import ClientOnly from "@/components/ClientOnly/ClientOnly";
 import HeaderPage from "@/components/HeaderPage/HeaderPage";
 import CardPDP from "@/components/CardPDP/CardPDP";
 import ButtonsPDP from "@/components/ButtonsPDP/ButtonsPDP";
-import Header from "@/components/Header/Header";
-import Banner from "@/components/Banner/Banner";
 import Footer from "@/components/Footer/Footer";
-import BuscandoMejorAmigo from "@/components/BuscandoMejorAmigo/BuscandoMejorAmigo";
 //Hooks
 import useDevice from "@/hooks/useDevice";
 //DATABASE
@@ -27,7 +24,7 @@ const inter = Inter({ subsets: ["latin"] });
 const PdpMAscota:React.FC<PdpMascotaProps> =({data}) => {
   const { device } = useDevice();
     const datos = JSON.parse(data)
-    console.log(4,datos)
+    //console.log(4,datos)
     //Collection
     const collectionPet = datos?.collection
     //Images
@@ -37,6 +34,13 @@ const PdpMAscota:React.FC<PdpMascotaProps> =({data}) => {
     const genderPet = datos?.genderPet
     //Dias de espera
     const diaQueLlego = datos?.fechaRecoleccion
+    //Stats
+    const energyPet = datos?.energyPet
+    const sizePet = datos?.sizePet
+    const agePet = datos?.agePet
+    //Description
+    const desctiptionPet00 = datos?.description
+
     return (
       <>
         <Head>
@@ -48,12 +52,9 @@ const PdpMAscota:React.FC<PdpMascotaProps> =({data}) => {
         <ClientOnly>
           <DeviceUnvailable device={device}/>
           <HeaderPage device={device} collection={collectionPet}/>
-          <CardPDP device={device} imagen01={imagenPet01} namePet={namePet} genderPet={genderPet} diaQueLlego={diaQueLlego}/>
+          <CardPDP device={device} imagen01={imagenPet01} namePet={namePet} genderPet={genderPet} diaQueLlego={diaQueLlego} energyPet={energyPet} sizePet={sizePet} agePet={agePet} description00={desctiptionPet00}/>
           <ButtonsPDP device={device}/>
-          {/* <Header device={device}/>
-          <Banner device={device}/>
-          <BuscandoMejorAmigo device={device}/>
-          <Footer /> */}
+          <Footer device={device}/>
         </ClientOnly>
       </>
     );

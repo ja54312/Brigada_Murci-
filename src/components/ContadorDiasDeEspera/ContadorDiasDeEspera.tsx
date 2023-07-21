@@ -3,14 +3,17 @@
 import React from "react";
 //Styles
 import styles from "./ContadorDiasDeEspera.module.css";
+//Component
+import Image from "next/image";
 //Icons
-import warning from '../../../public/senal-de-peligro.png'
+import warning from '../../../public/warning.png'
 //Models
 interface ContadorDiasDeEsperaProps {
     diaQueLlego: Date;
+    pdp?:boolean | undefined
 }
 
-const ContadorDiasDeEspera: React.FC<ContadorDiasDeEsperaProps> = ({ diaQueLlego }) => {
+const ContadorDiasDeEspera: React.FC<ContadorDiasDeEsperaProps> = ({ diaQueLlego,pdp}) => {
   //console.log(10,typeof(diaQueLlego))
     let hoy = new Date();
     let diaQueLlego00
@@ -23,13 +26,29 @@ const ContadorDiasDeEspera: React.FC<ContadorDiasDeEsperaProps> = ({ diaQueLlego
   let diferenciaMilisegundos = hoy.getTime() - diaQueLlego00;
   let diferenciaDias = Math.round(diferenciaMilisegundos / (24 * 60 * 60 * 1000));
   //console.log(diferenciaDias)
-  return (
-    <section className={styles.sectionContadorMobile}>
-      <span className={styles.infoContadorMobile}>
-         <strong>{diferenciaDias}</strong> días en espera de un hogar
-      </span>
-    </section>
-  );
+  if(pdp){
+    return(
+      <section className={styles.sectionContadorMobile}>
+        <div className={styles.infoContadorMobilePDP}>
+          <div className={styles.miniContainerImagePDP}>
+          <Image src={warning} alt='warning' width={30} height={30}/>
+          </div>
+           <strong>{diferenciaDias}</strong> días en espera de un hogar
+        </div>
+      </section>
+    )
+  }else{
+    return (
+      <section className={styles.sectionContadorMobile}>
+        <div className={styles.infoContadorMobile}>
+        {/* <div className={styles.miniContainerImage}>
+          <Image src={warning} alt='warning' width={15} height={15}/>
+        </div> */}
+           <strong>{diferenciaDias}</strong> días en espera de un hogar
+        </div>
+      </section>
+    );
+  }
 };
 
 export default ContadorDiasDeEspera;

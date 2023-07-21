@@ -4,14 +4,14 @@ import React from 'react'
 //Component
 import Link from 'next/link'
 //Styles
-import styles from './Footer.module.css'
+import styles from './Contact.module.css'
 //Models
 import { DEVICE } from '../../../tsModels/useDevice.model'
-interface FooterProps {
+interface ContactProps {
   device:DEVICE | undefined
 }
 
-const Footer:React.FC<FooterProps> = ({device}) => {
+const Contact:React.FC<ContactProps> = ({device}) => {
   if(device === 'desktop'){
     return null
   }
@@ -20,13 +20,13 @@ const Footer:React.FC<FooterProps> = ({device}) => {
   }
   if(device === 'phone'){
     return (
-      <footer className={styles.footerMobile}>
-        <span>Created with love ❤ by<a href='https://www.ja54312.com/' target="_blank" rel="noopener noreferrer">@JA54312</a></span>
-      </footer>
+      <section className={styles.sectionContactMobile}>
+        
+      </section>
     )
   }else{
     return null
   }
 }
 
-export default Footer
+export default Contact

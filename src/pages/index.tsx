@@ -30,7 +30,7 @@ export default function Home() {
           <Header device={device}/>
           <Banner device={device}/>
           <BuscandoMejorAmigo device={device}/>
-          {/* <Footer /> */}
+          <Footer device={device}/>
         </ClientOnly>
       </>
     );
