@@ -45,10 +45,10 @@ if(device === 'phone'){
     <section className={styles.sectionBuscandoMejorAmigoMobile}> 
       <div className={styles.containerBuscandoMejorAmigoMobile}>
         <div className={styles.containerTitleCategories}>
-          <div className={styles.titleCategories}>Categorías</div>
-          <div className={styles.titleCategories} style={{cursor:'pointer'}}>Mostrar Todos</div>
+          {/* <div className={styles.titleCategories}>Categorías</div> */}
+          <div className={styles.titleCategories}>Mostrar Todos</div>
         </div>
-        <div className={styles.categoriesCategories}>
+        {/* <div className={styles.categoriesCategories}>
           <div className={styles.categoriesCard}>
             <div className={styles.categoriesCardImage}>imagen</div>
             <div className={styles.categoriesCardText}>Perros</div>
@@ -57,7 +57,7 @@ if(device === 'phone'){
             <div className={styles.categoriesCardImage}>imagen</div>
             <div className={styles.categoriesCardText}>Gatos</div>
           </div>
-        </div>
+        </div> */}
         <div className={styles.containerSearchResult}>
           {data && data.length >0 && data.map((el)=>{
            return <CardSeacrhResult key={el._id} data={el}/>

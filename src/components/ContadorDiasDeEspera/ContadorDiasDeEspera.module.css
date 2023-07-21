@@ -13,10 +13,12 @@
     background-color: inherit;
 }
 .infoContadorMobile{
-    font-size: 10px;
-    color: #939393;
+    font-size: 12px;
+    color: #EA79E9;
     background-color: inherit;
+    letter-spacing: -1px;
 }
 .infoContadorMobile strong {
     background-color: inherit;
+    font-size: 13px;
 }
