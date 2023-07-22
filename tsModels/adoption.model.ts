@@ -16,5 +16,7 @@ export interface Adoption{
     sizePet:string
     energyPet:string
     description:string
+    convive:boolean
+    descriptionConvive:string
 }
     

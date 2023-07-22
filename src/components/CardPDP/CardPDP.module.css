@@ -67,14 +67,14 @@
 .cardStatsMobile{
     border-radius: 15px;
     width: 30%;
-    height: 70px;
+    height: 60px;
 }
 .containerStatsImageMobile{
     width: auto;
     height: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     border-radius: inherit;
 }
 .containerStatsInfoMobile{
@@ -87,7 +87,7 @@
 }
 .containerStatsInfoMobile span{
     color:#7A6BBC;
-    font-size: 18px;
+    font-size: 15px;
 }
 .containerDescriptionCardMobile{
     padding-top: 15px;
@@ -114,6 +114,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top:15px;
 }
 .containerImageConvivenciaMobile{
     height: 50%;

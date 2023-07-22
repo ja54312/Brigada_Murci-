@@ -6,6 +6,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 //Icons
 import tiktok from '../../../public/tiktok.png'
+import facebook from '../../../public/facebook.png'
+import instagram from '../../../public/instagram.png'
 //Styles
 import styles from './Contact.module.css'
 //Models
@@ -36,10 +38,10 @@ const Contact:React.FC<ContactProps> = ({device}) => {
             <span className={styles.subtitleContactMobile}>Conoce más de nuestra labor en redes sociales:</span>
             <div className={styles.containerImagesContactMobile}>
               <Link href='https://www.facebook.com/brigadamurcitexcoco' target='_blank'>
-                <Image src='https://www.vectorlogo.zone/logos/facebook/facebook-tile.svg' alt='facebook' width={50} height={50}/>
+                <Image src={facebook} alt='facebook' width={50} height={50}/>
               </Link>
               <Link href='https://www.instagram.com/brigadamurcitexcoco/' target='_blank'>
-                <Image src='https://www.vectorlogo.zone/logos/instagram/instagram-icon.svg' alt='facebook' width={50} height={50}/>
+                <Image src={instagram} alt='facebook' width={50} height={50}/>
               </Link>
               <Link href='https://www.tiktok.com/@brigadamurcitexcoco?_t=8eBjJ6y3ZLy&_r=1' target='_blank'>
                 <Image src={tiktok} alt='facebook' width={50} height={50}/>

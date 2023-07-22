@@ -14,8 +14,7 @@ const DeviceUnvailable:React.FC<DeviceUnavibleProps> = ({device}) => {
         return (
           <section className={styles.sectionDeviceUnavible}>
             <div className={styles.containerDeviceUnavible}>
-              Por el momento la pagina no se encuentra optimizada para este
-              dispositivo, prueba en mobile
+            Por el momento la página no se encuentra optimizada para este dispositivo, prueba en tu celular.
             </div>
           </section>
         );
@@ -24,8 +23,7 @@ const DeviceUnvailable:React.FC<DeviceUnavibleProps> = ({device}) => {
         return (
           <section className={styles.sectionDeviceUnavibleTablet}>
             <div className={styles.containerDeviceUnavibleTablet}>
-              Por el momento la pagina no se encuentra optimizada para este
-              dispositivo, prueba en mobile
+            Por el momento la página no se encuentra optimizada para este dispositivo, prueba en tu celular.
             </div>
           </section>
         );

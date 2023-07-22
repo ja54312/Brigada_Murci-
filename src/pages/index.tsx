@@ -31,7 +31,7 @@ export default function Home() {
           <Header device={device}/>
           <Banner device={device}/>
           <BuscandoMejorAmigo device={device}/>
-          <Contact device={device}/>
+          {/* <Contact device={device}/> */}
           <Footer device={device}/>
         </ClientOnly>
       </>

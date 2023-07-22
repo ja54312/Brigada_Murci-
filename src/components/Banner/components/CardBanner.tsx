@@ -16,13 +16,11 @@ interface CardBannerProps {
 const CardBanner:React.FC<CardBannerProps> = ({data,position}) => {
 
     if(position === 0){
-        return (
-      
+        return (    
           <div className={styles.cardBannerMobile}>
               <div className={styles.cardBanner01}>
               <div className={styles.cardBannerInfo}>
                   <span>{data?.textCard}</span>
-                  <div></div>
               </div>
               <div className={styles.cardBannerImage}>
                 <Image src={perritos} alt='imagen banner' width={200}/>

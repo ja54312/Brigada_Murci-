@@ -24,6 +24,8 @@ interface CardPDPProps {
   sizePet:string
   agePet:string
   description00:string
+  convive:boolean
+  descriptionConvive:string
 }
 
 const CardPDP: React.FC<CardPDPProps> = ({
@@ -35,7 +37,9 @@ const CardPDP: React.FC<CardPDPProps> = ({
   energyPet,
   sizePet,
   agePet,
-  description00
+  description00,
+  convive,
+  descriptionConvive
 }) => {
   if (device === "desktop") {
     return null;
@@ -51,8 +55,8 @@ const CardPDP: React.FC<CardPDPProps> = ({
             <Image
               src={imagen01}
               alt="imagen pdpMascota"
-              width={290}
-              height={170}
+              width={128}
+              height={192}
             />
           </div>
           <div className={styles.containerInfoCardMobile}>
@@ -90,17 +94,16 @@ const CardPDP: React.FC<CardPDPProps> = ({
             </div>
             <div className={styles.containerDescriptionCardMobile}>
               <span>
-                Fue rescatada en estado de gestación avanzada y sobreviviente de
-                TVT.
+                {description00}
               </span>
             </div>
             <div className={styles.containerConvivenciaCardMobile}>
               <div className={styles.containerImageConvivenciaMobile}>
                 <Image src={perro} alt="perro" width={50} height={50}/>
-                <Image src={gato} alt="gato" width={50} height={50}/>
+                {convive&&<Image src={gato} alt="gato" width={50} height={50}/>}
               </div>
               <div className={styles.containerInfoConvivenciaMobile}>
-                <span>Convive con otros perritos, cachorros y adultos y gatos.</span>
+                <span>{descriptionConvive}</span>
               </div>
             </div>
           </div>

@@ -5,7 +5,7 @@
     width: 100%;
     height: auto;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 .containerButtonsPDPMobile{
     width: 90%;
@@ -18,7 +18,7 @@
 .sectionButtonsPDPMobile button{
     color: #FFFFFF;
     background-color: #7A6BBC;
-    width: 150px;
+    width: 90%;
     height: 40px;
     border: none;
     border-radius: 5px;

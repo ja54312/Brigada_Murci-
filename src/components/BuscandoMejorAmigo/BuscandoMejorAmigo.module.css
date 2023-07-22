@@ -136,12 +136,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 /*CARD*/
 .cardSearchResult{
-    width: 48%;
-    height: 200px;
+    width: 43%;
+    height: auto;
     border-radius: 15px;
     background-color: #FFFFFF;
     margin-bottom: 20px;
