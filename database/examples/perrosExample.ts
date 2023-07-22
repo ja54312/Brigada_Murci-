@@ -67,6 +67,22 @@ export const perrosExample: AdoptionCollection = [
     descriptionConvive: "No convive con perros ni gatos.",
   },
   {
+    _id: "dog07",
+    fechaCreacion: "2023-07-22T06:00:00.000+00:00",
+    collection: "perro",
+    namePet: "Berni",
+    agePet: 4,
+    genderPet: "Macho",
+    imagenPet: "https://i.postimg.cc/MpLmLg61/Berni.jpg",
+    fechaRecoleccion: new Date("2023-01-15T06:00:00.000+00:00"),
+    sizePet: "Grande",
+    energyPet: "Media-Alta",
+    description: "fue rescatado en el canal de San Bernardino.",
+    convive: true,
+    descriptionConvive:
+      "Convive con otros perritos, cachorros y adultos y gatos.",
+  },
+  {
     _id: "dog01",
     fechaCreacion: "2023-07-08T06:00:00.000+00:00",
     collection: "perro",
@@ -100,22 +116,7 @@ export const perrosExample: AdoptionCollection = [
     convive: false,
     descriptionConvive: "Convive con otros perritos, cachorros y adultos.",
   },
-  {
-    _id: "dog07",
-    fechaCreacion: "2023-07-22T06:00:00.000+00:00",
-    collection: "perro",
-    namePet: "Berni",
-    agePet: 4,
-    genderPet: "Macho",
-    imagenPet: "https://i.postimg.cc/MpLmLg61/Berni.jpg",
-    fechaRecoleccion: new Date("2023-05-15T06:00:00.000+00:00"),
-    sizePet: "Grande",
-    energyPet: "Media-Alta",
-    description: "fue rescatado en el canal de San Bernardino.",
-    convive: true,
-    descriptionConvive:
-      "Convive con otros perritos, cachorros y adultos y gatos.",
-  },
+
   {
     _id: "dog09",
     fechaCreacion: "2023-07-22T06:00:00.000+00:00",
