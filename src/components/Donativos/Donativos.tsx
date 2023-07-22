@@ -1,6 +1,8 @@
 "use client";
 //Librerias
 import React from "react";
+//Component
+import Link from "next/link";
 //Styles
 import styles from "./Donativos.module.css";
 //Models
@@ -27,7 +29,7 @@ const Donativos: React.FC<donativosProps> = ({ device }) => {
               <span>Gabriela Velázquez</span>
               <span>Cuenta: 9479 1337 4491 8</span>
               <span>CLABE: 1271 8001 3374 4918 92</span>
-              <span>paypal.me/brigadamurci</span>
+              <Link href='https://www.paypal.me/brigadamurci' target='_blank'>paypal.me/brigadamurci</Link>
             </div>
           </div>
           <div className={styles.containerInfoDonativosMobile}>

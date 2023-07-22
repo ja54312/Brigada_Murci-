@@ -26,7 +26,7 @@ const Contact:React.FC<ContactProps> = ({device}) => {
       <section className={styles.sectionContactMobile}>
         <div className={styles.containerContactMobile}>
             <br/>
-            <Link href='https://www.paypal.com/paypalme/brigadamurci?fbclid=IwAR0IRfQdzVUwTC0oTLuLeq1bW7hXRBqLg10Ii7n8mON_kg57KTzjoD6Eas0' target='_blank'>
+            <Link href='https://www.paypal.me/brigadamurci' target='_blank'>
             <span className={styles.titleContactMobile}>DONA AQUÍ</span>
             </Link>
             <Link href='/apadriname'>
