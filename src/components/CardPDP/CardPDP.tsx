@@ -65,7 +65,7 @@ const CardPDP: React.FC<CardPDPProps> = ({
             <div className={styles.containerStatsMobile}>
               <div className={styles.cardStatsMobile}>
                 <div className={styles.containerStatsImageMobile}>
-                  <Image src={rayos} alt="rayo" width={50} height={30}/>
+                  <Image src={rayos} alt="rayo" width={50}/>
                 </div>
                 <div className={styles.containerStatsInfoMobile}>
                   <span>{energyPet}</span>
@@ -73,7 +73,7 @@ const CardPDP: React.FC<CardPDPProps> = ({
               </div>
               <div className={styles.cardStatsMobile}>
                 <div className={styles.containerStatsImageMobile}>
-                <Image src={pastel} alt="rayo" width={50} height={30}/>
+                <Image src={pastel} alt="rayo" width={50}/>
                 </div>
                 <div className={styles.containerStatsInfoMobile}>
                   <span>{agePet}</span>
@@ -81,7 +81,7 @@ const CardPDP: React.FC<CardPDPProps> = ({
               </div>
               <div className={styles.cardStatsMobile}>
                 <div className={styles.containerStatsImageMobile}>
-                <Image src={balanza} alt="rayo" width={50} height={30}/>
+                <Image src={balanza} alt="rayo" width={50} />
                 </div>
                 <div className={styles.containerStatsInfoMobile}>
                   <span>{sizePet}</span>

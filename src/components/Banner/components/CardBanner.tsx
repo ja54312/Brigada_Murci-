@@ -3,6 +3,8 @@
 import React,{useState , useEffect} from 'react'
 //Component
 import Image from 'next/image'
+//Icons
+import perritos from '../../../../public/perritos.png'
 //Styles
 import styles from '../Banner.module.css'
 //Models
@@ -23,7 +25,7 @@ const CardBanner:React.FC<CardBannerProps> = ({data,position}) => {
                   <div></div>
               </div>
               <div className={styles.cardBannerImage}>
-                  <img src={data?.bannerCard} alt='imagen banner'/>
+                <Image src={perritos} alt='imagen banner' width={200}/>
               </div>
               </div>
           </div>

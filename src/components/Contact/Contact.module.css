@@ -1,7 +1,58 @@
 /*DESKTOP*/
 /*TABLET*/
 /*MOBILE*/
-.sectionContactMobile{
-    width: 100%;
-    height: auto;
+.sectionContactMobile {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.containerContactMobile {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  background-color: var(--border-card-color);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.containerContactMobile a{
+  background-color: inherit;
+  text-decoration: none;
+  padding-top: 15px;
+}
+.titleContactMobile {
+  background-color: inherit;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+}
+.subtitleContactMobile {
+  background-color: inherit;
+  color: #ffffff;
+  font-size: 18px;
+  padding-top: 15px;
+  text-align: center;
+}
+.containerImagesContactMobile {
+  background-color: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 70%;
+}
+.containerImagesContactMobile a {
+  background-color: inherit;
+  cursor: pointer;
+}
+.containerImagesContactMobile img {
+  background-color: inherit;
+  cursor: pointer;
+}
+.infoContactMobile {
+  background-color: inherit;
+  color: #ffffff;
+  font-size: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }

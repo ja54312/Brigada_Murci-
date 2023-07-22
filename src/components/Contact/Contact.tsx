@@ -3,6 +3,9 @@
 import React from 'react'
 //Component
 import Link from 'next/link'
+import Image from 'next/image'
+//Icons
+import tiktok from '../../../public/tiktok.png'
 //Styles
 import styles from './Contact.module.css'
 //Models
@@ -21,7 +24,29 @@ const Contact:React.FC<ContactProps> = ({device}) => {
   if(device === 'phone'){
     return (
       <section className={styles.sectionContactMobile}>
-        
+        <div className={styles.containerContactMobile}>
+            <br/>
+            <Link href='https://www.paypal.me/brigadamurci' target='_blank'>
+            <span className={styles.titleContactMobile}>DONA AQUÍ</span>
+            </Link>
+            <Link href='/apadriname'>
+            <span className={styles.titleContactMobile}>OTRAS FORMAS DE AYUDAR</span>
+            </Link>
+            <br/>
+            <span className={styles.subtitleContactMobile}>Conoce más de nuestra labor en redes sociales:</span>
+            <div className={styles.containerImagesContactMobile}>
+              <Link href='https://www.facebook.com/brigadamurcitexcoco' target='_blank'>
+                <Image src='https://www.vectorlogo.zone/logos/facebook/facebook-tile.svg' alt='facebook' width={50} height={50}/>
+              </Link>
+              <Link href='https://www.instagram.com/brigadamurcitexcoco/' target='_blank'>
+                <Image src='https://www.vectorlogo.zone/logos/instagram/instagram-icon.svg' alt='facebook' width={50} height={50}/>
+              </Link>
+              <Link href='https://www.tiktok.com/@brigadamurcitexcoco?_t=8eBjJ6y3ZLy&_r=1' target='_blank'>
+                <Image src={tiktok} alt='facebook' width={50} height={50}/>
+              </Link>
+            </div>
+            <span className={styles.infoContactMobile}>@brigadamurcitexcoco</span>
+        </div>
       </section>
     )
   }else{

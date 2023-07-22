@@ -33,7 +33,7 @@ const ContadorDiasDeEspera: React.FC<ContadorDiasDeEsperaProps> = ({ diaQueLlego
           <div className={styles.miniContainerImagePDP}>
           <Image src={warning} alt='warning' width={30} height={30}/>
           </div>
-           <strong>{diferenciaDias}</strong> días en espera de un hogar
+           <strong>{diferenciaDias} </strong>  días en espera de un hogar
         </div>
       </section>
     )
@@ -44,7 +44,7 @@ const ContadorDiasDeEspera: React.FC<ContadorDiasDeEsperaProps> = ({ diaQueLlego
         {/* <div className={styles.miniContainerImage}>
           <Image src={warning} alt='warning' width={15} height={15}/>
         </div> */}
-           <strong>{diferenciaDias}</strong> días en espera de un hogar
+           <strong>{diferenciaDias} </strong> días en espera de un hogar
         </div>
       </section>
     );

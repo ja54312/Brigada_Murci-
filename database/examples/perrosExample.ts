@@ -33,7 +33,7 @@ export const perrosExample:AdoptionCollection = [
       genderPet:'Hembra',
       imagenPet:'https://i.postimg.cc/15BDrmqq/Shensy.jpg',
       fechaRecoleccion:new Date('2023-05-15T06:00:00.000+00:00'),
-      sizePet:'Mediana-Grande',
+      sizePet:'Mediana',
       energyPet:'Media',
       description:'Se entrega vacunada, desparasitada y vacunada.'
   },
@@ -45,7 +45,7 @@ export const perrosExample:AdoptionCollection = [
       genderPet:'Hembra',
       imagenPet:'https://i.postimg.cc/xCLzJnQq/Mila.jpg',
       fechaRecoleccion:new Date('2022-06-01T06:00:00.000+00:00'),
-      sizePet:'Mediana-Grande',
+      sizePet:'Mediana',
       energyPet:'Media',
       description:'Super amoroso. En proceso de rehabilitación por fractura de húmero.  Se entrega vacunado, desparasitado, esterilizado.'
   },
