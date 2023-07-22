@@ -1,6 +1,8 @@
 "use client"
 //Librerias
 import React from 'react'
+//Component
+import Link from 'next/link'
 //Styles
 import styles from './ButtonsPDP.module.css'
 //Modules
@@ -20,7 +22,7 @@ const ButtonsPDP:React.FC<ButtonsPDPProps> = ({device}) => {
         return (
             <section className={styles.sectionButtonsPDPMobile}>
                 <div className={styles.containerButtonsPDPMobile}>
-                    <button>Apadrríname</button><button><a href='https://forms.gle/FjpcgbrfhpCTGd8A8' target="_blank">Adóptame</a></button>
+                    <button><Link href='/apadriname'>Apadrríname</Link></button><button><a href='https://forms.gle/FjpcgbrfhpCTGd8A8' target="_blank">Adóptame</a></button>
                 </div>
             </section>
           )

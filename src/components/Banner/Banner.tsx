@@ -20,7 +20,7 @@ const Banner:React.FC<BannerProps> = ({device}) => {
     const dataBanner = [
         {
             textCard:'¿Estás buscando a tu nuevo mejor amigo?',
-            bannerCard:'/banner01.png'
+            bannerCard:'/perritos.png'
         },
         {
             textCard:'Todos los animalitos que encontrarás en este sitio fueron rescatados de la calle en alguna condición extrema de maltrato y / o abandono.',

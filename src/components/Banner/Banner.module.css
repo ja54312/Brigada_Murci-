@@ -79,11 +79,12 @@
   border-radius: 15px;
   display: flex;
   justify-content: center;
+  align-items: flex-end;
 }
 .containerCardsGeneralMobile .cardBannerMobile .cardBanner01 .cardBannerImage img{
-  background-color: inherit;
-  width: 269px;
-  height: 48px;
+  background-color: transparent;
+  position: absolute;
+  bottom: -46px;
 }
 .cardBannerMobile .cardBanner02{
   background-color: inherit;
@@ -149,6 +150,7 @@
   border-radius: 50px;
   background-color: #DDDDDD;
   cursor: pointer;
+  z-index: 2;
 }
 .puntoMobileActive{
   background-color: #7A6BBC;

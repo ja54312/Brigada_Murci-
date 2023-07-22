@@ -4,8 +4,7 @@ import { Inter } from "next/font/google";
 import Head from "next/head";
 import ClientOnly from "@/components/ClientOnly/ClientOnly";
 import Header from "@/components/Header/Header";
-import Banner from "@/components/Banner/Banner";
-import BuscandoMejorAmigo from "@/components/BuscandoMejorAmigo/BuscandoMejorAmigo";
+import Donativos from "@/components/Donativos/Donativos";
 import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
 //Hooks
@@ -13,9 +12,7 @@ import useDevice from "@/hooks/useDevice";
 //Models
 import DeviceUnvailable from "@/components/DeviceUnvailable/DeviceUnvailable";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+export default function Apadriname() {
   const { device } = useDevice();
 
     return (
@@ -29,8 +26,7 @@ export default function Home() {
         <ClientOnly>
           <DeviceUnvailable device={device}/>
           <Header device={device}/>
-          <Banner device={device}/>
-          <BuscandoMejorAmigo device={device}/>
+          <Donativos device={device} />
           <Contact device={device}/>
           <Footer device={device}/>
         </ClientOnly>

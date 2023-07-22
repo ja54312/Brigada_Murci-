@@ -48,6 +48,7 @@
 .infoContadorMobilePDP strong {
     background-color: inherit;
     font-size: 20px;
+    padding-right: 5px;
 }
 .miniContainerImagePDP{
     width: 10%;
