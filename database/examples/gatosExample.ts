@@ -11,7 +11,9 @@ export const gatosExample:AdoptionCollection = [
       fechaRecoleccion:new Date('2023-05-15T06:00:00.000+00:00'),
       sizePet:'Mediana',
       energyPet:'Media',
-      description:'Fui rescatada por Brigada Murci en enero 2021 después que un vecino de la comunidad reporto que fui atacada con un arma de fuego directo a la cara.'
+      description:'Fui rescatada por Brigada Murci en enero 2021 después que un vecino de la comunidad reporto que fui atacada con un arma de fuego directo a la cara.',
+      convive:true,
+      descriptionConvive:'Convive con otros perritos, cachorros y adultos y gatos.'
   },
   {  _id : 'cat02',
       fechaCreacion: '2023-07-08T06:00:00.000+00:00',
@@ -23,7 +25,9 @@ export const gatosExample:AdoptionCollection = [
       fechaRecoleccion:new Date('2023-05-15T06:00:00.000+00:00'),
       sizePet:'Mediana',
       energyPet:'Media',
-      description:'Fui rescatada por Brigada Murci en enero 2021 después que un vecino de la comunidad reporto que fui atacada con un arma de fuego directo a la cara.'
+      description:'Fui rescatada por Brigada Murci en enero 2021 después que un vecino de la comunidad reporto que fui atacada con un arma de fuego directo a la cara.',
+      convive:true,
+      descriptionConvive:'Convive con otros perritos, cachorros y adultos y gatos.'
   },
   {  _id : 'cat03',
       fechaCreacion: '2023-07-08T06:00:00.000+00:00',
@@ -35,7 +39,9 @@ export const gatosExample:AdoptionCollection = [
       fechaRecoleccion:new Date('2023-05-15T06:00:00.000+00:00'),
       sizePet:'Mediana',
       energyPet:'Media',
-      description:'Fui rescatada por Brigada Murci en enero 2021 después que un vecino de la comunidad reporto que fui atacada con un arma de fuego directo a la cara.'
+      description:'Fui rescatada por Brigada Murci en enero 2021 después que un vecino de la comunidad reporto que fui atacada con un arma de fuego directo a la cara.',
+      convive:true,
+      descriptionConvive:'Convive con otros perritos, cachorros y adultos y gatos.'
   },
   {  _id : 'cat04',
       fechaCreacion: '2023-07-08T06:00:00.000+00:00',
@@ -47,7 +53,9 @@ export const gatosExample:AdoptionCollection = [
       fechaRecoleccion:new Date('2023-05-15T06:00:00.000+00:00'),
       sizePet:'Mediana',
       energyPet:'Media',
-      description:'Fui rescatada por Brigada Murci en enero 2021 después que un vecino de la comunidad reporto que fui atacada con un arma de fuego directo a la cara.'
+      description:'Fui rescatada por Brigada Murci en enero 2021 después que un vecino de la comunidad reporto que fui atacada con un arma de fuego directo a la cara.',
+      convive:true,
+      descriptionConvive:'Convive con otros perritos, cachorros y adultos y gatos.'
   },
   {  _id : 'cat05',
       fechaCreacion: '2023-07-08T06:00:00.000+00:00',
@@ -59,7 +67,9 @@ export const gatosExample:AdoptionCollection = [
       fechaRecoleccion:new Date('2023-05-15T06:00:00.000+00:00'),
       sizePet:'Mediana',
       energyPet:'Media',
-      description:'Fui rescatada por Brigada Murci en enero 2021 después que un vecino de la comunidad reporto que fui atacada con un arma de fuego directo a la cara.'
+      description:'Fui rescatada por Brigada Murci en enero 2021 después que un vecino de la comunidad reporto que fui atacada con un arma de fuego directo a la cara.',
+      convive:true,
+      descriptionConvive:'Convive con otros perritos, cachorros y adultos y gatos.'
   },
   {  _id : 'cat06',
       fechaCreacion: '2023-07-08T06:00:00.000+00:00',
@@ -71,6 +81,8 @@ export const gatosExample:AdoptionCollection = [
       fechaRecoleccion:new Date('2023-05-15T06:00:00.000+00:00'),
       sizePet:'Mediana',
       energyPet:'Media',
-      description:'Fui rescatada por Brigada Murci en enero 2021 después que un vecino de la comunidad reporto que fui atacada con un arma de fuego directo a la cara.'
+      description:'Fui rescatada por Brigada Murci en enero 2021 después que un vecino de la comunidad reporto que fui atacada con un arma de fuego directo a la cara.',
+      convive:true,
+      descriptionConvive:'Convive con otros perritos, cachorros y adultos y gatos.'
   }
 ]

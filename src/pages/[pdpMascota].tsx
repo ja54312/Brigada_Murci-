@@ -40,6 +40,8 @@ const PdpMAscota:React.FC<PdpMascotaProps> =({data}) => {
     const agePet = datos?.agePet
     //Description
     const desctiptionPet00 = datos?.description
+    const convive = datos?.convive
+    const descriptionPet01 =datos?.descriptionConvive
 
     return (
       <>
@@ -52,7 +54,7 @@ const PdpMAscota:React.FC<PdpMascotaProps> =({data}) => {
         <ClientOnly>
           <DeviceUnvailable device={device}/>
           <HeaderPage device={device} collection={collectionPet}/>
-          <CardPDP device={device} imagen01={imagenPet01} namePet={namePet} genderPet={genderPet} diaQueLlego={diaQueLlego} energyPet={energyPet} sizePet={sizePet} agePet={agePet} description00={desctiptionPet00}/>
+          <CardPDP device={device} imagen01={imagenPet01} namePet={namePet} genderPet={genderPet} diaQueLlego={diaQueLlego} energyPet={energyPet} sizePet={sizePet} agePet={agePet} description00={desctiptionPet00} convive={convive} descriptionConvive={descriptionPet01}/>
           <ButtonsPDP device={device}/>
           <Footer device={device}/>
         </ClientOnly>

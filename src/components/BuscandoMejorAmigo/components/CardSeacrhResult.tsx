@@ -24,7 +24,7 @@ const CardSeacrhResult:React.FC<CardSeacrhResultProps> = ({data}) => {
     <div className={styles.cardSearchResult} onClick={()=>goToPDP(data?._id)}>
         <div className={styles.containerInfoSearchResult}>
             <div className={styles.containerImageCard}>
-                <Image src={data?.imagenPet} alt='mascota' width={145} height={110}/>
+                <Image src={data?.imagenPet} alt='mascota' width={132.4} height={153.6}/>
             </div>
             <div className={styles.containerInfoCard}>
                 <div className={styles.titleCard}>{data?.namePet}</div>

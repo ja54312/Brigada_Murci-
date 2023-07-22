@@ -1,31 +1,86 @@
 /*DESKTOP*/
-.footer{
-    width: 100%;
-    height: 50px;
-    background-color: var(--footer-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: var(--footer-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 .footer span,
-.footer a{
-    background-color: inherit;
+.footer a {
+  background-color: inherit;
 }
 /*TABLET*/
 /*MOBILE*/
-.footerMobile{
-    width: 100%;
-    height: 50px;
-    background-color: var(--footer-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    color: #FFFFFF;
+.footerMobile {
+  width: 100%;
+  height: auto;
+  background-color: var(--footer-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #ffffff;
+  padding: 15px 0;
 }
 .footerMobile span,
-.footerMobile a{
-    background-color: inherit;
-    color: #FFFFFF;
+.footerMobile a {
+  background-color: inherit;
+  color: #ffffff;
+}
+
+.containerContactMobile {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.containerContactMobile a {
+  background-color: inherit;
+  text-decoration: none;
+  padding-top: 15px;
+}
+.titleContactMobile {
+  background-color: inherit;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+}
+.subtitleContactMobile {
+  background-color: inherit;
+  color: #ffffff;
+  font-size: 18px;
+  padding-top: 15px;
+  text-align: center;
+}
+.containerImagesContactMobile {
+  background-color: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 70%;
+  padding-bottom: 25px;
+}
+.containerImagesContactMobile a {
+  background-color: inherit;
+  cursor: pointer;
+}
+.containerImagesContactMobile img {
+  background-color: inherit;
+  cursor: pointer;
+}
+.infoContactMobile {
+  background-color: inherit;
+  color: #ffffff;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.creatdByMobile{
+    padding-top: 15px;
 }
