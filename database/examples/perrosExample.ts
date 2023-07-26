@@ -13,7 +13,7 @@ export const perrosExample: AdoptionCollection = [
     sizePet: "Mediana",
     energyPet: "Media",
     description:
-      "Fue rescatada cuando vecinos alertaron que un perrito había sido atacado por un arma de fuego.",
+      "Fue atacada por un arma de fuego en la cara",
     convive: false,
     descriptionConvive: "Convive con otros perritos, cachorros y adultos.",
   },
@@ -62,7 +62,7 @@ export const perrosExample: AdoptionCollection = [
     sizePet: "Mediana",
     energyPet: "Media-Alta",
     description:
-      "Fue rescatada en estado de gestación avanzada, sobreviviente de TVT y parvovirus.",
+      "Rescatada en estado de gestación avanzada, sobreviviente de TVT y parvovirus.",
     convive: false,
     descriptionConvive: "No convive con perros ni gatos.",
   },
@@ -77,7 +77,7 @@ export const perrosExample: AdoptionCollection = [
     fechaRecoleccion: new Date("2023-01-15T06:00:00.000+00:00"),
     sizePet: "Grande",
     energyPet: "Media-Alta",
-    description: "fue rescatado en el canal de San Bernardino.",
+    description: "Rescatado del canal de San Bernardino, llevaba muchos días intentando salir hasta que se dió por vencido.",
     convive: true,
     descriptionConvive:
       "Convive con otros perritos, cachorros y adultos y gatos.",
@@ -145,7 +145,7 @@ export const perrosExample: AdoptionCollection = [
     sizePet: "Chica",
     energyPet: "Media",
     description:
-      "Rescatada junto con sus hermanitas en un caja, sus dueños solo se quedaron el macho.",
+      "Fue rescatada después que la tiraron en una bolsa junto con sus 6 hermanos al poco tiempo de nacer. Es la única sobreviviente.",
     convive: false,
     descriptionConvive: "Convive con otros perritos.",
   },
