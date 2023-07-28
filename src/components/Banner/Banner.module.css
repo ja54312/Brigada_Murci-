@@ -108,7 +108,7 @@
 .cardBanner03 .cardBannerInfo span{
   background-color: inherit;
     color: var(--cardText-color);
-    font-size: 17px;
+    font-size: 13px;
     font-weight: bold;
     padding: 0 15px;
 }

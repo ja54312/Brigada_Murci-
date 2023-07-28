@@ -1,5 +1,5 @@
 //Fuente
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 //Components
 import Head from "next/head";
 import ClientOnly from "@/components/ClientOnly/ClientOnly";
@@ -13,7 +13,7 @@ import useDevice from "@/hooks/useDevice";
 //Models
 import DeviceUnvailable from "@/components/DeviceUnvailable/DeviceUnvailable";
 
-const inter = Inter({ subsets: ["latin"] });
+const popins = Poppins({weight:['500','100','900'],subsets:["latin"],variable:'--font-popins'});
 
 export default function Home() {
   const { device } = useDevice();
@@ -27,12 +27,14 @@ export default function Home() {
           <link rel="icon" href="/BrigadaMurciLogoV.png" />
         </Head>
         <ClientOnly>
+        <body className={`${popins.variable}`}>
           <DeviceUnvailable device={device}/>
           <Header device={device}/>
           <Banner device={device}/>
           <BuscandoMejorAmigo device={device}/>
           {/* <Contact device={device}/> */}
           <Footer device={device}/>
+        </body>
         </ClientOnly>
       </>
     );

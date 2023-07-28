@@ -53,24 +53,24 @@ const Banner:React.FC<BannerProps> = ({device}) => {
       }, [position,width]);
 
 
-      let timer: number = 3000
-      useEffect(() => {
-          if (isNaN(timer)) {
-              timer = 2000
-          } else if (timer < 1000) {
-              timer = 1000
-          }
+    //   let timer: number = 3000
+    //   useEffect(() => {
+    //       if (isNaN(timer)) {
+    //           timer = 2000
+    //       } else if (timer < 1000) {
+    //           timer = 1000
+    //       }
   
-          const cross = setInterval(() => {
-              if (position >= dataBanner.length - 1) {
-                  setPosition(0)
-                  clearInterval(cross)
-              } else {
-                  setPosition(position + 1)
-                  clearInterval(cross)
-              }
-          }, timer)
-      })
+    //       const cross = setInterval(() => {
+    //           if (position >= dataBanner.length - 1) {
+    //               setPosition(0)
+    //               clearInterval(cross)
+    //           } else {
+    //               setPosition(position + 1)
+    //               clearInterval(cross)
+    //           }
+    //       }, timer)
+    //   })
 
 
       let colorPoint0:string = position === 0 ? '#7A6BBC' : '#DDDDDD'
