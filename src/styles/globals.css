@@ -1,5 +1,5 @@
 * {
-  font-family: var(--fuente-principal);
+  font-family: var(--font-popins);
   margin: 0;
   padding: 0;
   background-color: var(--fondo-color);
@@ -14,5 +14,5 @@
   --border-card-color: #675cb0;
   --footer-color: #7A6BBC;
   --text-footer-color: #f3f8fb;
-  --fuente-principal: "Yanone Kaffeesatz", sans-serif;
+  --fuente-principal: Poppins;
 }

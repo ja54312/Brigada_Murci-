@@ -1,5 +1,5 @@
 //Fuente
-import { Inter, M_PLUS_1, Rock_3D } from "next/font/google";
+import { Poppins } from "next/font/google";
 //Components
 import Head from "next/head";
 import ClientOnly from "@/components/ClientOnly/ClientOnly";
@@ -19,7 +19,7 @@ interface PdpMascotaProps {
   data: any
 }
 
-const inter = Inter({ subsets: ["latin"] });
+const popins = Poppins({weight:['500','100','900'],subsets:["latin"],variable:'--font-popins'});
 
 const PdpMAscota:React.FC<PdpMascotaProps> =({data}) => {
   const { device } = useDevice();
@@ -52,11 +52,13 @@ const PdpMAscota:React.FC<PdpMascotaProps> =({data}) => {
           <link rel="icon" href="/BrigadaMurciLogoV.png" />
         </Head>
         <ClientOnly>
+        <body className={`${popins.variable}`}>
           <DeviceUnvailable device={device}/>
           <HeaderPage device={device} collection={collectionPet}/>
           <CardPDP device={device} imagen01={imagenPet01} namePet={namePet} genderPet={genderPet} diaQueLlego={diaQueLlego} energyPet={energyPet} sizePet={sizePet} agePet={agePet} description00={desctiptionPet00} convive={convive} descriptionConvive={descriptionPet01}/>
           <ButtonsPDP device={device}/>
           <Footer device={device}/>
+        </body>
         </ClientOnly>
       </>
     );
