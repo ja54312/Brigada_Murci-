@@ -9,42 +9,39 @@ import Image from "next/image";
 import warning from '../../../public/warning.png'
 //Models
 interface ContadorDiasDeEsperaProps {
-    diaQueLlego: Date;
-    pdp?:boolean | undefined
+  diaQueLlego: Date;
+  pdp?: boolean | undefined
 }
 
-const ContadorDiasDeEspera: React.FC<ContadorDiasDeEsperaProps> = ({ diaQueLlego,pdp}) => {
+const ContadorDiasDeEspera: React.FC<ContadorDiasDeEsperaProps> = ({ diaQueLlego, pdp }) => {
   //console.log(10,typeof(diaQueLlego))
-    let hoy = new Date();
-    let diaQueLlego00
-    if(typeof(diaQueLlego)=== 'string'){
-      diaQueLlego00 = Date.parse(diaQueLlego)
-    }else{
-      diaQueLlego00 = diaQueLlego.getTime()
-    }
+  let hoy = new Date();
+  let diaQueLlego00
+  if (typeof (diaQueLlego) === 'string') {
+    diaQueLlego00 = Date.parse(diaQueLlego)
+  } else {
+    diaQueLlego00 = diaQueLlego.getTime()
+  }
   //console.log(dia);
   let diferenciaMilisegundos = hoy.getTime() - diaQueLlego00;
   let diferenciaDias = Math.round(diferenciaMilisegundos / (24 * 60 * 60 * 1000));
   //console.log(diferenciaDias)
-  if(pdp){
-    return(
+  if (pdp) {
+    return (
       <section className={styles.sectionContadorMobile}>
         <div className={styles.infoContadorMobilePDP}>
           <div className={styles.miniContainerImagePDP}>
-          <Image src={warning} alt='warning' width={30} height={30}/>
+            <Image src={warning} alt='warning' width={30} height={30} />
           </div>
-           <strong>{diferenciaDias} </strong>  días en espera de un hogar
+          <strong>{diferenciaDias}</strong><span>días en espera de un hogar</span>
         </div>
       </section>
     )
-  }else{
+  } else {
     return (
       <section className={styles.sectionContadorMobile}>
         <div className={styles.infoContadorMobile}>
-        {/* <div className={styles.miniContainerImage}>
-          <Image src={warning} alt='warning' width={15} height={15}/>
-        </div> */}
-           <strong>{diferenciaDias} </strong> días en espera de un hogar
+          <strong>{diferenciaDias}</strong><span> días en espera de un hogar</span>
         </div>
       </section>
     );

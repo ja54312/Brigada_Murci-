@@ -1,19 +1,21 @@
 /*DESKTOP*/
 /*TABLET*/
 /*MOBILE*/
-.sectionCardPDPMobile{
+.sectionCardPDPMobile {
     padding-top: 10px;
     width: 100%;
     height: auto;
 }
-.containerCardPDPMobile{
+
+.containerCardPDPMobile {
     width: 85%;
     height: auto;
     margin: 0 auto;
     border-radius: 15px;
     background-color: #FFFFFF;
 }
-.containerImageCardPDPMobile{
+
+.containerImageCardPDPMobile {
     background-color: inherit;
     display: flex;
     align-items: center;
@@ -21,10 +23,12 @@
     padding: 10px;
     border-radius: 15px 15px 0 0;
 }
-.containerImageCardPDPMobile img{
+
+.containerImageCardPDPMobile img {
     border-radius: 15px;
 }
-.containerInfoCardMobile{
+
+.containerInfoCardMobile {
     background-color: inherit;
     display: flex;
     flex-direction: column;
@@ -33,7 +37,8 @@
     padding: 10px;
     border-radius: 0 0 15px 15px;
 }
-.containerTitlesCardMobile{
+
+.containerTitlesCardMobile {
     width: 100%;
     height: auto;
     background-color: inherit;
@@ -42,20 +47,24 @@
     align-items: center;
     justify-content: space-between;
 }
-.titleNameMobile{
+
+.titleNameMobile {
     background-color: inherit;
     font-weight: bold;
     font-size: 20px;
 }
-.titleBrigadaMobile{
+
+.titleBrigadaMobile {
     background-color: inherit;
     font-size: 10px;
     color: #939393;
 }
-.containerGenderMobile{
+
+.containerGenderMobile {
     background-color: inherit;
 }
-.containerStatsMobile{
+
+.containerStatsMobile {
     width: 100%;
     height: auto;
     padding-top: 10px;
@@ -64,12 +73,14 @@
     justify-content: space-around;
     background-color: inherit;
 }
-.cardStatsMobile{
+
+.cardStatsMobile {
     border-radius: 15px;
     width: 30%;
     height: 60px;
 }
-.containerStatsImageMobile{
+
+.containerStatsImageMobile {
     width: auto;
     height: 50%;
     display: flex;
@@ -77,7 +88,8 @@
     align-items: flex-end;
     border-radius: inherit;
 }
-.containerStatsInfoMobile{
+
+.containerStatsInfoMobile {
     width: auto;
     height: 50%;
     display: flex;
@@ -85,11 +97,13 @@
     align-items: center;
     border-radius: inherit;
 }
-.containerStatsInfoMobile span{
-    color:#7A6BBC;
+
+.containerStatsInfoMobile span {
+    color: #7A6BBC;
     font-size: 15px;
 }
-.containerDescriptionCardMobile{
+
+.containerDescriptionCardMobile {
     padding-top: 15px;
     width: 100%;
     height: 60px;
@@ -100,13 +114,15 @@
     justify-content: center;
     color: #BDBDBD;
 }
-.containerDescriptionCardMobile span{
+
+.containerDescriptionCardMobile span {
     background-color: inherit;
     font-size: 14px;
     text-align: center;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
-.containerConvivenciaCardMobile{
+
+.containerConvivenciaCardMobile {
     width: 100%;
     height: auto;
     border-radius: 15px;
@@ -114,9 +130,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top:15px;
+    margin-top: 15px;
 }
-.containerImageConvivenciaMobile{
+
+.containerImageConvivenciaMobile {
     height: 50%;
     border-radius: inherit;
     display: flex;
@@ -124,7 +141,8 @@
     align-items: center;
     justify-content: center
 }
-.containerInfoConvivenciaMobile{
+
+.containerInfoConvivenciaMobile {
     height: 50%;
     border-radius: inherit;
     display: flex;
@@ -133,7 +151,8 @@
     justify-content: center;
     min-height: 50px;
 }
-.containerInfoConvivenciaMobile span{
+
+.containerInfoConvivenciaMobile span {
     color: #EA79E9;
     font-weight: bold;
     text-align: center;
