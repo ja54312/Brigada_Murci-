@@ -1,17 +1,9 @@
-import Link from 'next/link'
-
+//Components
+import { Logo } from "./components/Logo"
+//Styles
+import styles from './Header.module.sass';
 export const Header = () => {
-    console.log('Hola mundo header')
-    return (<header>
-        <nav>
-            <ul>
-                <Link href="/">
-                    <li>Home</li>
-                </Link>
-                <Link href="/store">
-                    <li>Store</li>
-                </Link>
-            </ul>
-        </nav>
+    return (<header className={styles.Header}>
+        <Logo />
     </header>)
 }
