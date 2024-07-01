@@ -6,7 +6,7 @@ import styles from "./DeviceUnaviable.module.sass";
 
 export const DeviceUnvailable = () => {
     const { device } = useDevice();
-    console.log("device", device)
+
     if (device === 'desktop') {
         return (
             <section className={styles.sectionDeviceUnavible}>
