@@ -1,6 +1,7 @@
-
+//styles
+import styles from './Menu.module.sass'
 export const Menu = () => {
     return (
-        <div>Menu</div>
+        <div className={styles.MenuContainer}>Menu</div>
     )
 }
