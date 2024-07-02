@@ -7,7 +7,7 @@ const urlBanner = '/images/banner-home-2 2.png'
 
 export const BannerHome = () => {
     return (
-        <div className={styles.BannerHome}>
+        <section className={styles.BannerHome}>
             <div className={styles.BannerHomeContainer}>
                 <Image
                     src={urlBanner}
@@ -15,6 +15,6 @@ export const BannerHome = () => {
                     fill
                 />
             </div>
-        </div>
+        </section>
     )
 }
