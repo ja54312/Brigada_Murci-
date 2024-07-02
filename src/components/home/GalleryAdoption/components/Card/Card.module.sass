@@ -1,0 +1,46 @@
+.Card
+    width: 158px
+    height: 230px
+    padding: 19px
+    margin-bottom: 19px
+    cursor: pointer
+
+    .containerImageCard
+        position: relative
+        width: inherit
+        height: 90%
+        & > img
+            border-radius: 6px 6px 0 0
+            object-fit: cover
+
+    .containerInfo
+        display: flex
+        padding-bottom: 12px
+        flex-direction: column
+        align-items: center
+        gap: 10px
+        border-radius: 0 0 6px 6px
+        background: #FFF
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25)
+
+        .name
+            padding-top: 10px
+            color: $color-comp-900
+            text-align: center
+            font-family: Inter
+            font-size: 15px
+            font-style: normal
+            font-weight: 600
+            line-height: normal
+
+        .caracteristicas
+            & > span
+                color: $color-secondary-600
+                text-align: right
+                font-family: Inter
+                font-size: 12px
+                font-style: normal
+                font-weight: 400
+                line-height: normal
+            .separator
+                font-weight: bold
