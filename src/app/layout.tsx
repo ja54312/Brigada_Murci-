@@ -1,9 +1,9 @@
-import { Inter } from 'next/font/google'
+import { Dosis } from 'next/font/google'
 import { Header } from '../components/shared/Header'
 import { Footer } from '../components/shared/Footer'
 import '../sass/global.sass'
 
-const inter = Inter({ subsets: ['latin'] })
+const dosis = Dosis({ subsets: ['latin'] })
 
 export default function RootLayout({
     children,
@@ -12,7 +12,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={inter.className}>
+            <body className={dosis.className}>
                 <Header />
                 {children}
                 <Footer />

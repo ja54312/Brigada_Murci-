@@ -1,0 +1,1 @@
+export { AdoptarHome } from "./AdoptarHome";
