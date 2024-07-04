@@ -14,8 +14,8 @@ export const Menu = () => {
 
 
     return (
-        <div className={styles.MenuContainer} onClick={openModal}>
-            <div className={styles.MenuBackGround}>
+        <div className={styles.MenuContainer}>
+            <div className={styles.MenuBackGround} onClick={openModal}>
                 <Image
                     src="/images/List.svg"
                     alt="MenuHamburguesa"
