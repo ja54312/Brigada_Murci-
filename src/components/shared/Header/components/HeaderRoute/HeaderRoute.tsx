@@ -8,11 +8,11 @@ import styles from './HeaderRoute.module.sass'
 
 export const HeaderRoute = () => {
     const pathname = usePathname()
-    console.log("path", pathname)
+    //console.log("path", pathname)
 
     return (
         <div className={styles.HeaderRoute}>
-            {pathname && pathname === '/' ? <Logo /> : <RouteNav />}
+            {pathname && pathname === '/' ? <Logo /> : <RouteNav pathname={pathname} />}
         </div>
     )
 }
