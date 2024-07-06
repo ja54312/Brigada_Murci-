@@ -1,0 +1,33 @@
+.BannerComoAdoptar
+    width: 100%
+    height: auto
+    display: flex
+    flex-direction: row
+    background-color: #D4D8F4
+    align-items: center
+    padding-top: 22px
+    padding-bottom: 44px
+    .containerText
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        max-width: 147px
+        padding-left: 23px
+        & > span
+            color: $color-comp-900
+            font-family: Blueberry
+            font-size: 27px
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+    .containerImage
+        width: 181px
+        height: 198px
+        flex-shrink: 0
+        position: relative
+        & > img
+            object-fit: cover
+
+    @media (min-width: 768px)
+        display: none

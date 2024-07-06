@@ -1,7 +1,7 @@
 //components
-import { DeviceUnvailable } from "../components/DeviceUnaviable"
+import { DeviceUnvailable } from "../../components/DeviceUnaviable"
 
-export default function ComoAdoptar() {
+export default function CuestionarioPreAdopcion() {
     console.log("aqui estoy")
 
     return (
