@@ -1,0 +1,1 @@
+export { HeroComoAdoptar } from "./HeroComoAdoptar";

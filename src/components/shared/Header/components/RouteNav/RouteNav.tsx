@@ -11,7 +11,7 @@ interface RoteNavProps {
 const urlImage = '/images/CaretLeft.svg'
 
 export const RouteNav: React.FC<RoteNavProps> = ({ pathname }) => {
-    console.log("pathname", pathname)
+    //console.log("pathname", pathname)
 
     let routenav: string
     if (pathname === '/como-adoptar') {

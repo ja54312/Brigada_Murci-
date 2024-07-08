@@ -1,13 +1,15 @@
 //components
 import { DeviceUnvailable } from "../../components/DeviceUnaviable"
-import { BannerComoAdoptar } from "../../components/comoAdoptar/BannerComoAdoptar"
+import { HeroComoAdoptar } from "../../components/comoAdoptar/HeroComoAdoptar"
+//styles
+import styles from './comoAdoptar.module.sass'
 
 export default function ComoAdoptar() {
 
     return (
-        <main>
+        <main className={styles.Main}>
             <DeviceUnvailable />
-            <BannerComoAdoptar />
+            <HeroComoAdoptar />
         </main>
     )
 }
