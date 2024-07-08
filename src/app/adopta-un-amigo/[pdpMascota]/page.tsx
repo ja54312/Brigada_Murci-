@@ -1,12 +1,20 @@
+//components
+import { HeroPDP } from "../../../components/pdpMascota/HeroPDP";
+import { StatsPDP } from "../../../components/pdpMascota/StatsPDP";
+import { InfoPDP } from "../../../components/pdpMascota/InfoPDP";
+import { PadrinoPDP } from "../../../components/pdpMascota/PadrinoPDP";
 import { GetServerSideProps } from "next";
 
 
 const PdpMAscota = ({ params }: { params: { PdpMascota: string } }) => {
-    console.log("data", { params })
+    //console.log("data", { params })
     return (
-        <>
-            <h2>adopta a un amigo</h2>
-        </>
+        <main>
+            <HeroPDP />
+            <StatsPDP />
+            <InfoPDP />
+            <PadrinoPDP />
+        </main>
     )
 }
 
