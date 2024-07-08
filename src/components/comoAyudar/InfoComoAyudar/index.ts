@@ -1,0 +1,1 @@
+export { InfoComoAyudar } from "./InfoComoAyudar";

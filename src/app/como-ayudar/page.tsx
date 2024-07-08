@@ -1,13 +1,16 @@
 //components
 import { DeviceUnvailable } from "../../components/DeviceUnaviable"
+import { BannerComoAyudar } from "../../components/comoAyudar/BannerComoAyudar"
+import { InfoComoAyudar } from "../../components/comoAyudar/InfoComoAyudar"
+//styles
+import styles from './comoAyudar.module.sass'
 
 export default function ComoAyudar() {
-    console.log("aqui estoy")
-
     return (
-        <main>
+        <main className={styles.Main}>
             <DeviceUnvailable />
-            <h2>Holi Crayoli</h2>
+            <BannerComoAyudar />
+            <InfoComoAyudar />
         </main>
     )
 }
