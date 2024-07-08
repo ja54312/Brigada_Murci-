@@ -1,0 +1,1 @@
+export { RequisitosComoAdoptar } from "./RequisitosComoAdoptar";
