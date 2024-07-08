@@ -1,0 +1,1 @@
+export { BannerBotomComoAdoptar } from "./BannerBotomComoAdoptar";

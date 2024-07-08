@@ -1,0 +1,49 @@
+.BannerBotomComoAdoptar
+    width: 100%
+    height: auto
+    padding-bottom: 67px
+    .containerBannerBotom
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        .contaienrImage
+            display: flex
+            width: 284px
+            height: 221px
+            padding: 0.001px 0px 0.002px 0px
+            justify-content: center
+            align-items: center
+            flex-shrink: 0
+            position: relative
+            & >img
+                top: 50px !important
+                object-fit: cover
+        .containerText
+            width: 343px
+            height: 145.479px
+            flex-shrink: 0
+            border-radius: 6px
+            background: #E1E4F8
+            .containerTitle
+                padding: 25px 25px 14px 25px
+                & > span
+                    color: $color-secondary-600
+                    font-family: Dosis
+                    font-size: 18px
+                    font-style: normal
+                    font-weight: 700
+                    line-height: normal
+            .containertext
+                padding: 0 25px 25px 25px
+                & > p
+                    color: $color-comp-900
+                    font-family: Dosis
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 500
+                    line-height: normal
+                    margin: 0
+
+    @media (min-width: 768px)
+        display: none
