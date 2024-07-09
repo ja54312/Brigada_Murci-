@@ -2,6 +2,7 @@
 import { HeroPDP } from "../../../components/pdpMascota/HeroPDP";
 import { StatsPDP } from "../../../components/pdpMascota/StatsPDP";
 import { InfoPDP } from "../../../components/pdpMascota/InfoPDP";
+import { ButtonPDP } from "../../../components/pdpMascota/ButtonPDP";
 import { PadrinoPDP } from "../../../components/pdpMascota/PadrinoPDP";
 import { GetServerSideProps } from "next";
 //styles
@@ -15,6 +16,7 @@ const PdpMAscota = ({ params }: { params: { PdpMascota: string } }) => {
             <HeroPDP />
             <StatsPDP />
             <InfoPDP />
+            <ButtonPDP />
             <PadrinoPDP />
         </main>
     )
