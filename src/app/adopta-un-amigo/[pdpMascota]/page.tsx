@@ -4,12 +4,14 @@ import { StatsPDP } from "../../../components/pdpMascota/StatsPDP";
 import { InfoPDP } from "../../../components/pdpMascota/InfoPDP";
 import { PadrinoPDP } from "../../../components/pdpMascota/PadrinoPDP";
 import { GetServerSideProps } from "next";
+//styles
+import styles from './pdpMascota.module.sass'
 
 
 const PdpMAscota = ({ params }: { params: { PdpMascota: string } }) => {
     //console.log("data", { params })
     return (
-        <main>
+        <main className={styles.Main}>
             <HeroPDP />
             <StatsPDP />
             <InfoPDP />
