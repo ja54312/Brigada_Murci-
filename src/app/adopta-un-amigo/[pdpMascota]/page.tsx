@@ -1,4 +1,5 @@
 //components
+import { DeviceUnvailable } from "../../../components/DeviceUnaviable";
 import { HeroPDP } from "../../../components/pdpMascota/HeroPDP";
 import { StatsPDP } from "../../../components/pdpMascota/StatsPDP";
 import { InfoPDP } from "../../../components/pdpMascota/InfoPDP";
@@ -13,6 +14,7 @@ const PdpMAscota = ({ params }: { params: { PdpMascota: string } }) => {
     //console.log("data", { params })
     return (
         <main className={styles.Main}>
+            <DeviceUnvailable />
             <HeroPDP />
             <StatsPDP />
             <InfoPDP />

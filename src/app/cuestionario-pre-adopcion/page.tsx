@@ -1,13 +1,18 @@
 //components
 import { DeviceUnvailable } from "../../components/DeviceUnaviable"
+import { BannerCuestionario } from "../../components/cuestionarioPreAdopcion/BannerCuestionario"
+import { RequisitosAdopcion } from "../../components/cuestionarioPreAdopcion/RequisitosAdopcion"
+import { FormAdopcion } from "../../components/cuestionarioPreAdopcion/FormAdopcion"
+//styles
+import styles from './CuestionarioPreAdopcion.module.sass'
 
 export default function CuestionarioPreAdopcion() {
-    console.log("aqui estoy")
-
     return (
-        <main>
+        <main className={styles.Main}>
             <DeviceUnvailable />
-            <h2>Holi Crayoli</h2>
+            <BannerCuestionario />
+            <RequisitosAdopcion />
+            <FormAdopcion />
         </main>
     )
 }

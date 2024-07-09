@@ -1,0 +1,1 @@
+export { BannerCuestionario } from "./BannerCuestionario";
