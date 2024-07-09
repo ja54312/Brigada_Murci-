@@ -1,3 +1,100 @@
 .StatsPDP
     width: 100%
     height: auto
+    .containerStatsGeneral
+        width: 90%
+        height: auto
+        display: flex
+        flex-direction: column
+        margin: 0 auto
+        .containerStats
+            width: 100%
+            height: auto
+            display: flex
+            flex-direction: row
+            align-items: center
+            .containerAge,
+            .containerWeight,
+            .containerSize
+                width: 100px
+                height: 60px
+                flex-shrink: 0
+                border-radius: 6px
+                background: #FFF
+                margin-right: 20px
+                .containerTextInfo
+                    display: flex
+                    flex-direction: row
+                    justify-content: center
+                    padding-top: 10px
+                    .containerImage
+                        width: 18px
+                        height: 18px
+                        flex-shrink: 0
+                        position: relative
+                        & > img
+                            object-fit: cover
+                    .ContainerText
+                        & > span
+                            color: $color-primary-700
+                            text-align: center
+                            font-size: 15px
+                            font-style: normal
+                            font-weight: 500
+                            line-height: normal
+                .containerTextStats
+                    display: flex
+                    flex-direction: row
+                    justify-content: center
+                    align-items: center
+                    & > span
+                        color: $color-secondary-600
+                        text-align: center
+                        font-size: 18px
+                        font-style: normal
+                        font-weight: 600
+                        line-height: normal
+        .containerRules
+            width: 100%
+            height: auto
+            display: flex
+            flex-direction: row
+            align-items: center
+            padding-top: 10px
+            justify-content: space-between
+            padding-bottom: 10px
+            .containerEnergy,
+            .containerConvive
+                width: 167px
+                height: 50px
+                flex-shrink: 0
+                border-radius: 6px
+                background: #FFF
+                display: flex
+                flex-direction: row
+                align-items: center
+                margin-right: 8px
+                .containerText
+                    padding-left: 15px
+                    padding-right: 15px
+                    & > span
+                        color: $color-comp-900
+                        font-size: 15px
+                        font-style: normal
+                        font-weight: 500
+                        line-height: normal
+                .containerImages
+                    display: flex
+                    flex-direction: row
+                    .containerImage
+                        width: 17.067px
+                        height: 24px
+                        position: relative
+                        & > img
+                            object-fit: cover
+                    .containerImageIcon
+                        width: 24px
+                        height: 24px
+                        position: relative
+                        & > img
+                            object-fit: cover
