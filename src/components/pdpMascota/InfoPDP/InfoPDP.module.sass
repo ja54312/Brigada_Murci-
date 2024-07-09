@@ -1,3 +1,29 @@
 .InfoPDP
     width: 100%
     height: auto
+    display: flex
+    align-items: center
+    justify-content: center
+    .containerInfo
+        width: 343px
+        height: 121px
+        flex-shrink: 0
+        border-radius: 6px
+        background: #FFF
+        .containerTitle
+            padding-top: 16px
+            padding-left: 18px
+            & > span
+                color: $color-comp-900
+                font-size: 18px
+                font-style: normal
+                font-weight: 700
+                line-height: normal
+        .containerText
+            padding-left: 18px
+            & > p
+                color: $color-comp-900
+                font-size: 17px
+                font-style: normal
+                font-weight: 500
+                line-height: normal
