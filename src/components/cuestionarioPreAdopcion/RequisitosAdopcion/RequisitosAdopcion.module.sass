@@ -1,3 +1,30 @@
 .RequisitosAdopcion
     width: 100%
     height: auto
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    .containerTitle
+        padding-left: 16px
+        & > span
+            color: $color-secondary-600
+            font-size: 18px
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+    .containerList
+        padding-left: 21px
+        padding-right: 12px
+        & > ul
+            & > li
+                color: $color-comp-900
+                font-size: 16px
+                font-style: normal
+                font-weight: 500
+                line-height: normal
+                padding-bottom: 10px
+    .containerHr
+        width: 95%
+        margin: 0 auto
+        & > hr
+            background: #E6E6E6
