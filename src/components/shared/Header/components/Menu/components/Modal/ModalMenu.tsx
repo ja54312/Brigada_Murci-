@@ -3,6 +3,7 @@
 import { useState } from 'react';
 //components
 import Image from 'next/image';
+import Link from 'next/link';
 import classNames from 'classnames/bind';
 //styles
 import styles from './ModalMenu.module.sass'
@@ -16,6 +17,12 @@ export const ModalMenu = ({ isOpenModal, closeModal }) => {
     const [visible02, setVisible02] = useState(false)
 
     if (!isOpenModal) return null;
+
+    const gotoRoute = () => {
+        setVisible(false)
+        setVisible02(false)
+        closeModal()
+    }
 
     const visibleMenu01 = () => {
         setVisible(!visible)
@@ -43,7 +50,9 @@ export const ModalMenu = ({ isOpenModal, closeModal }) => {
                     <span className={styles.close} onClick={closeModal}>&times;</span>
                 </div>
                 <div className={styles.ContainerSimpleTitle}>
-                    <span>Inicio</span>
+                    <Link href='/' onClick={gotoRoute}>
+                        <span>Inicio</span>
+                    </Link>
                 </div>
                 <div className={styles.ContainerFatherTitle} onClick={visibleMenu01}>
                     <span>Adopción</span>
@@ -57,34 +66,40 @@ export const ModalMenu = ({ isOpenModal, closeModal }) => {
                 </div>
                 {visible && <div className={styles.ContainerSubTitle}>
                     <div className={styles.ContainerSonTitle}>
-                        <span>Adopta a un amigo</span>
-                        <div className={styles.ContainerArrowMenu}>
-                            <Image
-                                src={urlArrow}
-                                alt="flecha de menu"
-                                fill
-                            />
-                        </div>
+                        <Link href='#'>
+                            <span>Adopta a un amigo</span>
+                            <div className={styles.ContainerArrowMenu}>
+                                <Image
+                                    src={urlArrow}
+                                    alt="flecha de menu"
+                                    fill
+                                />
+                            </div>
+                        </Link>
                     </div>
                     <div className={styles.ContainerSonTitle}>
-                        <span>¿Cómo adoptar?</span>
-                        <div className={styles.ContainerArrowMenu}>
-                            <Image
-                                src={urlArrow}
-                                alt="flecha de menu"
-                                fill
-                            />
-                        </div>
+                        <Link href='/como-adoptar' onClick={gotoRoute}>
+                            <span>¿Cómo adoptar?</span>
+                            <div className={styles.ContainerArrowMenu}>
+                                <Image
+                                    src={urlArrow}
+                                    alt="flecha de menu"
+                                    fill
+                                />
+                            </div>
+                        </Link>
                     </div>
                     <div className={styles.ContainerSonTitle}>
-                        <span>Cuestionario de pre adopción</span>
-                        <div className={styles.ContainerArrowMenu}>
-                            <Image
-                                src={urlArrow}
-                                alt="flecha de menu"
-                                fill
-                            />
-                        </div>
+                        <Link href='/cuestionario-pre-adopcion' onClick={gotoRoute}>
+                            <span>Cuestionario de pre adopción</span>
+                            <div className={styles.ContainerArrowMenu}>
+                                <Image
+                                    src={urlArrow}
+                                    alt="flecha de menu"
+                                    fill
+                                />
+                            </div>
+                        </Link>
                     </div>
                 </div>}
                 <div className={styles.ContainerFatherTitle} onClick={visibleMenu02}>
@@ -99,44 +114,56 @@ export const ModalMenu = ({ isOpenModal, closeModal }) => {
                 </div>
                 {visible02 && <div className={styles.ContainerSubTitle}>
                     <div className={styles.ContainerSonTitle}>
-                        <span>Con donaciones</span>
-                        <div className={styles.ContainerArrowMenu}>
-                            <Image
-                                src={urlArrow}
-                                alt="flecha de menu"
-                                fill
-                            />
-                        </div>
+                        <Link href='#'>
+                            <span>Con donaciones</span>
+                            <div className={styles.ContainerArrowMenu}>
+                                <Image
+                                    src={urlArrow}
+                                    alt="flecha de menu"
+                                    fill
+                                />
+                            </div>
+                        </Link>
                     </div>
                     <div className={styles.ContainerSonTitle}>
-                        <span>Ser un padrino</span>
-                        <div className={styles.ContainerArrowMenu}>
-                            <Image
-                                src={urlArrow}
-                                alt="flecha de menu"
-                                fill
-                            />
-                        </div>
+                        <Link href='#'>
+                            <span>Ser un padrino</span>
+                            <div className={styles.ContainerArrowMenu}>
+                                <Image
+                                    src={urlArrow}
+                                    alt="flecha de menu"
+                                    fill
+                                />
+                            </div>
+                        </Link>
                     </div>
                     <div className={styles.ContainerSonTitle}>
-                        <span>Ser un voluntario</span>
-                        <div className={styles.ContainerArrowMenu}>
-                            <Image
-                                src={urlArrow}
-                                alt="flecha de menu"
-                                fill
-                            />
-                        </div>
+                        <Link href='#'>
+                            <span>Ser un voluntario</span>
+                            <div className={styles.ContainerArrowMenu}>
+                                <Image
+                                    src={urlArrow}
+                                    alt="flecha de menu"
+                                    fill
+                                />
+                            </div>
+                        </Link>
                     </div>
                 </div>}
                 <div className={styles.ContainerSimpleTitle}>
-                    <span>Acerca de Brigada Murci</span>
+                    <Link href='#'>
+                        <span>Acerca de Brigada Murci</span>
+                    </Link>
                 </div>
                 <div className={styles.ContainerSimpleTitle}>
-                    <span>Noticias</span>
+                    <Link href='#'>
+                        <span>Noticias</span>
+                    </Link>
                 </div>
                 <div className={styles.ContainerSimpleTitle}>
-                    <span>Contáctanos</span>
+                    <Link href='#'>
+                        <span>Contáctanos</span>
+                    </Link>
                 </div>
             </div>
         </div>
