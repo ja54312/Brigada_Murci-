@@ -10,10 +10,12 @@ import styles from './ModalMenu.module.sass'
 const urlArrow = '/images/CaretDown.svg'
 
 export const ModalMenu = ({ isOpenModal, closeModal }) => {
-    if (!isOpenModal) return null;
+
 
     const [visible, setVisible] = useState(false)
     const [visible02, setVisible02] = useState(false)
+
+    if (!isOpenModal) return null;
 
     const visibleMenu01 = () => {
         setVisible(!visible)
