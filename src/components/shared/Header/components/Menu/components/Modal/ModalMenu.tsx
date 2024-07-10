@@ -114,7 +114,7 @@ export const ModalMenu = ({ isOpenModal, closeModal }) => {
                 </div>
                 {visible02 && <div className={styles.ContainerSubTitle}>
                     <div className={styles.ContainerSonTitle}>
-                        <Link href='#'>
+                        <Link href='/como-ayudar' onClick={gotoRoute}>
                             <span>Con donaciones</span>
                             <div className={styles.ContainerArrowMenu}>
                                 <Image
