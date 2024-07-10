@@ -4,6 +4,15 @@
     padding-top: 24px
     padding-bottom: 24px
     .form
+        .containerText
+            padding-bottom: 22px
+            padding-left: 30px
+            padding-right: 30px
+            & > p
+                color: $color-comp-900
+                font-size: 13px
+                font-style: normal
+                font-weight: 500
         .containerInput
             position: relative
             width: 100%
@@ -11,6 +20,7 @@
             display: flex
             flex-direction: column
             align-items: center
+            padding-bottom: 22px
             .label
                 position: absolute
                 top: -7px
@@ -21,6 +31,7 @@
                 font-weight: 500
                 letter-spacing: 0.5px
                 background-color: #FFF
+                max-width: 85%
             .input
                 display: flex
                 width: 308px
@@ -35,3 +46,61 @@
                 font-style: normal
                 font-weight: 400
                 letter-spacing: 0.5px
+            .inputArea
+                display: flex
+                width: 308px
+                height: 134px
+                padding: 0px 19px 0px 16px
+                justify-content: center
+                align-items: center
+                border-radius: 4px
+                border: 1px solid #79747E
+                color: $color-comp-800
+                font-size: 16px
+                font-style: normal
+                font-weight: 400
+                letter-spacing: 0.5px
+        .containerInputRadio
+            width: 100%
+            height: auto
+            padding-left: 16px
+            display: flex
+            flex-direction: column
+            & > span
+                padding-bottom: 11px
+                color: #79747E
+                font-size: 13px
+                font-style: normal
+                font-weight: 500
+                letter-spacing: 0.5px
+            .containerOption
+                display: flex
+                align-items: center
+                flex-direction: row
+                padding-bottom: 12px
+                .labelRadio
+                    color: $color-comp-800
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 400
+                    letter-spacing: 0.5px
+                    padding-left: 5px
+                .inputRadio
+                    appearance: none
+                    width: 32px
+                    height: 32px
+                    border: 2px solid #000000
+                    border-radius: 50%
+                    position: relative
+                    outline: none
+                    cursor: pointer
+                    &:checked::before
+                        content: ''
+                        width: 20px
+                        height: 20px
+                        background-color: #000000
+                        border-radius: 50%
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%, -50%)
