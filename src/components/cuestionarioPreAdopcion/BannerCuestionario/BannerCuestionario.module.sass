@@ -1,3 +1,28 @@
 .BannerCuestionario
     width: 100%
     height: auto
+    display: flex
+    flex-direction: column
+    padding: 22px 0
+    .containerMainImage
+        display: flex
+        flex-direction: column
+        align-items: center
+        .containerImage
+            width: 231.381px
+            height: 198px
+            flex-shrink: 0
+            position: relative
+            & > img
+                object-fit: cover
+    .containerText
+        padding-top: 40px
+        padding-left: 16px
+        padding-right: 16px
+        & > p
+            color: $color-comp-900
+            font-size: 16px
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+            margin: 0
