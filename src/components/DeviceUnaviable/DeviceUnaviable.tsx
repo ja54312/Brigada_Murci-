@@ -9,20 +9,20 @@ export const DeviceUnvailable = () => {
 
     if (device === 'desktop') {
         return (
-            <section className={styles.sectionDeviceUnavible}>
+            <div className={styles.sectionDeviceUnavible}>
                 <div className={styles.containerDeviceUnavible}>
                     Por el momento la página no se encuentra optimizada para este dispositivo, prueba en tu celular.
                 </div>
-            </section>
+            </div>
         );
     }
     if (device === 'tablet') {
         return (
-            <section className={styles.sectionDeviceUnavibleTablet}>
+            <div className={styles.sectionDeviceUnavibleTablet}>
                 <div className={styles.containerDeviceUnavibleTablet}>
                     Por el momento la página no se encuentra optimizada para este dispositivo, prueba en tu celular.
                 </div>
-            </section>
+            </div>
         );
     }
     if (device === 'phone') {
