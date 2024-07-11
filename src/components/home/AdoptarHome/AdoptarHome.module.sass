@@ -3,7 +3,7 @@
     display: flex
     flex-direction: column
     min-width: 320px
-    padding: 40px 0 40px 16px
+    padding: 40px 16px 40px 16px
     justify-content: center
     align-items: flex-start
     gap: 8px
@@ -25,8 +25,11 @@
             letter-spacing: -0.76px
 
     .AdoptarHomeContainerCards
+        display: flex
+        flex-direction: column
+        align-items: center
         .AdoptarHomeCard
-            max-width: 287px
+            max-width: 290px
             height: auto
             display: flex
             padding: 24px
@@ -39,27 +42,29 @@
             margin-bottom: 24px
 
             .TitleCard
-                display: -webkit-box
-                -webkit-box-orient: vertical
-                -webkit-line-clamp: 1
-                align-self: stretch
-                overflow: hidden
-                color: $color-comp-700
-                text-overflow: ellipsis
-                font-size: 20px
-                font-style: normal
-                font-weight: 600
+                & > span
+                    display: -webkit-box
+                    -webkit-box-orient: vertical
+                    -webkit-line-clamp: 1
+                    align-self: stretch
+                    overflow: hidden
+                    color: $color-comp-700
+                    text-overflow: ellipsis
+                    font-size: 20px
+                    font-style: normal
+                    font-weight: 600
             .TextCard
-                display: -webkit-box
-                -webkit-box-orient: vertical
-                -webkit-line-clamp: 5
-                align-self: stretch
-                overflow: hidden
-                color: $color-secondary-600
-                text-overflow: ellipsis
-                font-size: 17px
-                font-style: normal
-                font-weight: 400
+                & > p
+                    display: -webkit-box
+                    -webkit-box-orient: vertical
+                    -webkit-line-clamp: 5
+                    align-self: stretch
+                    overflow: hidden
+                    color: $color-secondary-600
+                    text-overflow: ellipsis
+                    font-size: 17px
+                    font-style: normal
+                    font-weight: 400
 
     @media (min-width: 768px)
         display: none

@@ -5,20 +5,33 @@ export const AdoptarHome = () => {
     return (
         <section className={styles.AdoptarHome}>
             <div className={styles.AdoptarHomeTitle}>
-                <span>¿Porqué adoptar con nosotros?</span>
+                <span>¿Por qué adoptar con nosotros?</span>
             </div>
             <div className={styles.AdoptarHomeContainerCards}>
                 <div className={styles.AdoptarHomeCard}>
-                    <div className={styles.TitleCard}>Protocolo de Salud Completo</div>
-                    <div className={styles.TextCard}>Cada animal rescatado recibe un protocolo de salud completo que incluye desparasitación, vacunas según su edad y esterilización. Este procedimiento es llevado a cabo por veterinarios titulados.</div>
+                    <div className={styles.TitleCard}>
+                        <span>Adoptables 100% sanos.</span>
+                    </div>
+                    <div className={styles.TextCard}>
+                        <p>Cada animal rescatado recibe atención médica especializada por veterinarios titulados, desde el momento de su rescate y hasta que llega a su nuevo hogar, todos nuestros adoptables cuentan con un protocolo de salud vigente que incluye: esterilización, desparasitasión y vacunas acorde a su edad. </p>
+                    </div>
                 </div>
                 <div className={styles.AdoptarHomeCard}>
-                    <div className={styles.TitleCard}>Adopta un Meztizo NUPEC</div>
-                    <div className={styles.TextCard}>Este año, formamos parte del programa Adopta un Meztizo de NUPEC; al concretar una adopción con nosotros recibirás un Kit de bienvenida para tu nuevo mejor amigo.</div>
+                    <div className={styles.TitleCard}>
+                        <span>Orgullo Mextizo de NUPEC.</span>
+                    </div>
+                    <div className={styles.TextCard}>
+                        <p>Desde 2024, formamos parte del programa Orgullo Mextizo de NUPEC, al concretar una adopción con nosotros recibirás un kit de bienvenida para tu nuevo mejor amigo.</p>
+                    </div>
                 </div>
                 <div className={styles.AdoptarHomeCard}>
-                    <div className={styles.TitleCard}>Acompañamiento después de la adopción</div>
-                    <div className={styles.TextCard}>Apoyo continuo para los nuevos dueños de mascotas.</div>
+                    <div className={styles.TitleCard}>
+                        <span>Acompañamiento después de la</span>
+                        <span>adopción.</span>
+                    </div>
+                    <div className={styles.TextCard}>
+                        <p>Para asegurar el bienestar del animal y la satisfacción de la nueva familia. Este proceso permite verificar que nuestros adoptables se estén adaptando adecuadamente a su nuevo hogar y que sus necesidades físicas y emocionales estén siendo atendidas.</p>
+                    </div>
                 </div>
             </div>
         </section>
