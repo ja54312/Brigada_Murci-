@@ -1,9 +1,10 @@
-import { Dosis } from 'next/font/google'
+//Fonts
+import { dosis, poppins, inter } from './fonts'
+//Components
 import { Header } from '../components/shared/Header'
 import { Footer } from '../components/shared/Footer'
+//Styles
 import '../sass/global.sass'
-
-const dosis = Dosis({ subsets: ['latin'] })
 
 export default function RootLayout({
     children,
@@ -11,8 +12,8 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <html lang="en">
-            <body className={dosis.className}>
+        <html lang="es" className={`${dosis.variable} ${poppins.variable} ${inter.variable}`}>
+            <body>
                 <Header />
                 {children}
                 <Footer />
