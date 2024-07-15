@@ -54,8 +54,13 @@ export const ModalMenu = ({ isOpenModal, closeModal }) => {
                         <span>Inicio</span>
                     </Link>
                 </div>
+                <div className={styles.ContainerSimpleTitle}>
+                    <Link href='#' onClick={gotoRoute}>
+                        <span>Acerca de Brigada Murci</span>
+                    </Link>
+                </div>
                 <div className={styles.ContainerFatherTitle} onClick={visibleMenu01}>
-                    <span>Adopción</span>
+                    <span>Adopciones</span>
                     <div className={arrowStyles}>
                         <Image
                             src={urlArrow}
@@ -91,7 +96,7 @@ export const ModalMenu = ({ isOpenModal, closeModal }) => {
                     </div>
                     <div className={styles.ContainerSonTitle}>
                         <Link href='/cuestionario-pre-adopcion' onClick={gotoRoute}>
-                            <span>Cuestionario de pre adopción</span>
+                            <span>Solicitud de adopción</span>
                             <div className={styles.ContainerArrowMenu}>
                                 <Image
                                     src={urlArrow}
@@ -127,7 +132,7 @@ export const ModalMenu = ({ isOpenModal, closeModal }) => {
                     </div>
                     <div className={styles.ContainerSonTitle}>
                         <Link href='#'>
-                            <span>Ser un padrino</span>
+                            <span>Apadrina un perrito</span>
                             <div className={styles.ContainerArrowMenu}>
                                 <Image
                                     src={urlArrow}
@@ -150,11 +155,6 @@ export const ModalMenu = ({ isOpenModal, closeModal }) => {
                         </Link>
                     </div>
                 </div>}
-                <div className={styles.ContainerSimpleTitle}>
-                    <Link href='#'>
-                        <span>Acerca de Brigada Murci</span>
-                    </Link>
-                </div>
                 <div className={styles.ContainerSimpleTitle}>
                     <Link href='#'>
                         <span>Noticias</span>
