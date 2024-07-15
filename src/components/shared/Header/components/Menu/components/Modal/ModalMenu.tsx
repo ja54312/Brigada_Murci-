@@ -55,7 +55,7 @@ export const ModalMenu = ({ isOpenModal, closeModal }) => {
                     </Link>
                 </div>
                 <div className={styles.ContainerSimpleTitle}>
-                    <Link href='#' onClick={gotoRoute}>
+                    <Link href='#'>
                         <span>Acerca de Brigada Murci</span>
                     </Link>
                 </div>
