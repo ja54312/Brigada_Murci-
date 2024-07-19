@@ -14,27 +14,27 @@ interface DataObject {
     urlimg: string;
 }
 
-const data: DataObject[] = [
-    {
-        id: "Kika",
-        index: 1,
-        name: "Kika",
-        genre: "Female",
-        age: 1.5,
-        weight: 9,
-        size: "chica",
-        energy: 3,
-        conviveBaby: true,
-        conviveDog: true,
-        conviveCat: false,
-        desc: "Fui rescatada junto con mis hermanitas cuando mis dueños decidieron abandonarnos por ser hembras. Soy muy enérgica, disfruto correr por las tardes. Si tienes otro perrito en casa, seré la compañera de juego ideal para él.  Soy muy sociable y me llevo bien con personas de todas las edades. Si me adoptas, prometo llenar tu vida de alegría, risas y momentos inolvidables.",
-        urlimg: "https://example.com/image1.jpg"
-    },
+const dataPerritos: DataObject[] = [
+    // {
+    //     id: "Kika",
+    //     index: 1,
+    //     name: "Kika",
+    //     genre: "Hembra",
+    //     age: 1.5,
+    //     weight: 9,
+    //     size: "chica",
+    //     energy: 3,
+    //     conviveBaby: true,
+    //     conviveDog: true,
+    //     conviveCat: false,
+    //     desc: "Fui rescatada junto con mis hermanitas cuando mis dueños decidieron abandonarnos por ser hembras. Soy muy enérgica, disfruto correr por las tardes. Si tienes otro perrito en casa, seré la compañera de juego ideal para él.  Soy muy sociable y me llevo bien con personas de todas las edades. Si me adoptas, prometo llenar tu vida de alegría, risas y momentos inolvidables.",
+    //     urlimg: "https://example.com/image1.jpg"
+    // },
     {
         id: "Bella",
         index: 2,
         name: "Bella",
-        genre: "Female",
+        genre: "Hembra",
         age: 3,
         weight: 15,
         size: "grande",
@@ -46,10 +46,10 @@ const data: DataObject[] = [
         urlimg: "https://example.com/image1.jpg"
     },
     {
-        id: "Bella",
+        id: "Dakota",
         index: 3,
-        name: "Bella",
-        genre: "Female",
+        name: "Dakota",
+        genre: "Hembra",
         age: 4,
         weight: 20,
         size: "grande",
@@ -64,7 +64,7 @@ const data: DataObject[] = [
         id: "Tasha",
         index: 4,
         name: "Tasha",
-        genre: "Female",
+        genre: "Hembra",
         age: 4,
         weight: 18,
         size: "grande",
@@ -79,7 +79,7 @@ const data: DataObject[] = [
         id: "Guapa",
         index: 5,
         name: "Guapa",
-        genre: "Female",
+        genre: "Hembra",
         age: 3,
         weight: 18,
         size: "grande",
@@ -94,7 +94,7 @@ const data: DataObject[] = [
         id: "Tokio",
         index: 6,
         name: "Tokio",
-        genre: "Female",
+        genre: "Hembra",
         age: 1.5,
         weight: 15,
         size: "mediana",
@@ -109,7 +109,7 @@ const data: DataObject[] = [
         id: "Kimichi",
         index: 7,
         name: "Kimichi",
-        genre: "Female",
+        genre: "Hembra",
         age: 1.5,
         weight: 21,
         size: "grande",
@@ -124,7 +124,7 @@ const data: DataObject[] = [
         id: "Cuca",
         index: 8,
         name: "Cuca",
-        genre: "Female",
+        genre: "Hembra",
         age: 4,
         weight: 22,
         size: "mediana",
@@ -139,7 +139,7 @@ const data: DataObject[] = [
         id: "Lottie",
         index: 9,
         name: "Lottie",
-        genre: "Female",
+        genre: "Hembra",
         age: 2,
         weight: 18,
         size: "mediana",
@@ -154,7 +154,7 @@ const data: DataObject[] = [
         id: "Berni",
         index: 10,
         name: "Berni",
-        genre: "Male",
+        genre: "Macho",
         age: 6,
         weight: 23,
         size: "grande",
@@ -169,7 +169,7 @@ const data: DataObject[] = [
         id: "Zuzi",
         index: 11,
         name: "Zuzi",
-        genre: "Female",
+        genre: "Hembra",
         age: 3,
         weight: 18,
         size: "mediana",
@@ -182,6 +182,4 @@ const data: DataObject[] = [
     },
 ];
 
-const jsonData = JSON.stringify(data, null, 2);
-
-export default jsonData;
+export default dataPerritos;

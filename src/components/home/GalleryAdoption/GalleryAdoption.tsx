@@ -2,11 +2,13 @@
 import { useEffect } from 'react'
 //components
 import { Card } from './components/Card'
+//database
+import dataPerritos from '../../../database/dataLocal'
 //styles
 import styles from './GalleryAdoption.module.sass'
 
 export const GalleryAdoption = () => {
-
+    //console.log('data', dataPerritos)
     // useEffect(() => {
     //     createRandomImages();
     // }, []);
@@ -37,12 +39,7 @@ export const GalleryAdoption = () => {
             </div>
             <div className={styles.GalleryAdoptionSection}>
                 <div className={styles.cardSection}>
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
+                    {dataPerritos && dataPerritos.map((perro) => (<Card perro={perro} />))}
                 </div>
                 <div className={styles.buttonSection}>
                     <button>Ver todos</button>
