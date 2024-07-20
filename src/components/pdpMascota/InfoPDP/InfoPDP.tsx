@@ -1,7 +1,8 @@
 //styles
 import styles from './InfoPDP.module.sass'
 
-export const InfoPDP = () => {
+export const InfoPDP = ({ mascota }) => {
+    //console.log("InfoPDP", mascota)
     return (
         <section className={styles.InfoPDP}>
             <div className={styles.containerInfo}>
@@ -9,7 +10,7 @@ export const InfoPDP = () => {
                     <span>Información:</span>
                 </div>
                 <div className={styles.containerText}>
-                    <p>Fue atacada por un arma de fuego en la cara. Convive con otros perritos, cachorros y adultos.</p>
+                    <p>{mascota.desc}</p>
                 </div>
             </div>
         </section>

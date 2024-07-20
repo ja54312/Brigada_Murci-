@@ -39,7 +39,7 @@ export const GalleryAdoption = () => {
             </div>
             <div className={styles.GalleryAdoptionSection}>
                 <div className={styles.cardSection}>
-                    {dataPerritos && dataPerritos.map((perro) => (<Card perro={perro} />))}
+                    {dataPerritos?.map((perro) => (<Card key={perro.id} perro={perro} />))}
                 </div>
                 <div className={styles.buttonSection}>
                     <button>Ver todos</button>

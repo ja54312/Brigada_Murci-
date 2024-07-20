@@ -1,5 +1,6 @@
 //components
 import Image from 'next/image'
+import { StatsConvive } from './components/StatsConvive'
 //styles
 import styles from './StatsPDP.module.sass'
 
@@ -8,11 +9,12 @@ const urlIconPeso = '/Icons/IconPeso.svg'
 const urlIconTalla = '/Icons/IconTalla.svg'
 const urlIconEnergyFull = '/Icons/energyFull.svg'
 const urlIconEnergyEmpty = '/Icons/energyEmpty.svg'
-const urlIconBaby = '/Icons/IconBaby.svg'
-const urlIconDog = '/Icons/IconDog.svg'
-const urlIconCat = '/Icons/IconCat.svg'
 
-export const StatsPDP = () => {
+
+export const StatsPDP = ({ mascota }) => {
+
+    //console.log("StatsPDP", mascota)
+
     return (
         <section className={styles.StatsPDP}>
             <div className={styles.containerStatsGeneral}>
@@ -112,34 +114,7 @@ export const StatsPDP = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={styles.containerConvive}>
-                        <div className={styles.containerText}>
-                            <span>Convive</span>
-                        </div>
-                        <div className={styles.containerImages}>
-                            <div className={styles.containerImageIcon}>
-                                <Image
-                                    src={urlIconBaby}
-                                    alt='iconBaby'
-                                    fill
-                                />
-                            </div>
-                            <div className={styles.containerImageIcon}>
-                                <Image
-                                    src={urlIconDog}
-                                    alt='iconDog'
-                                    fill
-                                />
-                            </div>
-                            <div className={styles.containerImageIcon}>
-                                <Image
-                                    src={urlIconCat}
-                                    alt='iconCat'
-                                    fill
-                                />
-                            </div>
-                        </div>
-                    </div>
+                    <StatsConvive mascota={mascota} />
                 </div>
             </div>
         </section>

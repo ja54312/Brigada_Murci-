@@ -6,16 +6,18 @@ import styles from './HeroPDP.module.sass'
 const urlImage = '/photos/cuquita.png'
 const urlVideo = '/images/video.svg'
 
-export const HeroPDP = () => {
+export const HeroPDP = ({ mascota }) => {
+    //console.log("inter", mascota)
+
     return (
         <section className={styles.HeroPDP}>
             <div className={styles.containerHeroPDP}>
                 <div className={styles.containerInfoName}>
                     <div className={styles.containerName}>
-                        <span>Cuquita</span>
+                        <span>{mascota.name}</span>
                     </div>
                     <div className={styles.containerGenre}>
-                        <span>Hembra</span>
+                        <span>{mascota.genre}</span>
                     </div>
                 </div>
                 <div className={styles.containerCarrusel}>
