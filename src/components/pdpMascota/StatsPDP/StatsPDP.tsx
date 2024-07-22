@@ -33,7 +33,7 @@ export const StatsPDP = ({ mascota }) => {
                             </div>
                         </div>
                         <div className={styles.containerTextStats}>
-                            <span>3 años</span>
+                            <span>{mascota.age} años</span>
                         </div>
                     </div>
                     <div className={styles.containerWeight}>
@@ -50,7 +50,7 @@ export const StatsPDP = ({ mascota }) => {
                             </div>
                         </div>
                         <div className={styles.containerTextStats}>
-                            <span>12 kgs</span>
+                            <span>{mascota.weight} kgs</span>
                         </div>
                     </div>
                     <div className={styles.containerSize}>
@@ -67,7 +67,7 @@ export const StatsPDP = ({ mascota }) => {
                             </div>
                         </div>
                         <div className={styles.containerTextStats}>
-                            <span>Mediana</span>
+                            <span>{mascota.size}</span>
                         </div>
                     </div>
                 </div>
