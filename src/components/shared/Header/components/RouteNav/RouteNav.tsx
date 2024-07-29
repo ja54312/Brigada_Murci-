@@ -20,7 +20,7 @@ export const RouteNav: React.FC<RoteNavProps> = ({ pathname }) => {
         routenav = '¿Cómo ayudar?'
     } else if (pathname === '/cuestionario-pre-adopcion') {
         routenav = 'Cuestionario de Pre Adopción'
-    } else if (pathname.includes('adopta-un-amigo')) {
+    } else if (pathname.includes('adoptables')) {
         routenav = 'Adopta a un amigo'
     } else null
 
