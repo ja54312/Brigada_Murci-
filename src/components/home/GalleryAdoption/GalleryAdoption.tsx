@@ -1,5 +1,5 @@
 "use client"
-import { useEffect } from 'react'
+import { useState } from 'react'
 //components
 import { Card } from './components/Card'
 //database
@@ -8,29 +8,15 @@ import dataPerritos from '../../../database/dataLocal'
 import styles from './GalleryAdoption.module.sass'
 
 export const GalleryAdoption = () => {
-    //console.log('data', dataPerritos)
-    // useEffect(() => {
-    //     createRandomImages();
-    // }, []);
 
-    const getRandomPosition = (element) => {
-        //const x = Math.floor(Math.random() * window.innerWidth);
-        const x = Math.floor(Math.random() * 375);
-        const y = Math.floor(Math.random() * 500);
-        return { x, y };
-    };
+    const [showAll, setShowAll] = useState(false);
 
-    const createRandomImages = () => {
-        const container = document.getElementById('GalleryAdoption');
-        for (let i = 0; i < 5; i++) { // cantidad de imágenes que quieras
-            const img = document.createElement('div');
-            img.classList.add(styles.smallBgImage);
-            const { x, y } = getRandomPosition(img);
-            img.style.left = `${x}px`;
-            img.style.top = `${y}px`;
-            container.appendChild(img);
-        }
+    const handleShowAll = () => {
+        setShowAll(true);
     };
+    //console.log(0, showAll)
+    const displayedPerritos = showAll ? dataPerritos : dataPerritos.slice(0, 6);
+
 
     return (
         <section className={styles.GalleryAdoption} id='GalleryAdoption'>
@@ -39,10 +25,10 @@ export const GalleryAdoption = () => {
             </div>
             <div className={styles.GalleryAdoptionSection}>
                 <div className={styles.cardSection}>
-                    {dataPerritos?.map((perro) => (<Card key={perro.id} perro={perro} />))}
+                    {displayedPerritos?.map((perro) => (<Card key={perro.id} perro={perro} />))}
                 </div>
                 <div className={styles.buttonSection}>
-                    <button>Ver todos</button>
+                    {!showAll && <button onClick={handleShowAll}>Ver todos</button>}
                 </div>
             </div>
         </section>
