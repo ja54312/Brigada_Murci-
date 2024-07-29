@@ -3,11 +3,11 @@ import Image from 'next/image'
 //styles
 import styles from './HeroPDP.module.sass'
 
-const urlImage = '/photos/cuquita.png'
 const urlVideo = '/images/video.svg'
 
 export const HeroPDP = ({ mascota }) => {
     //console.log("inter", mascota)
+    const urlImage = mascota.urlimg
 
     return (
         <section className={styles.HeroPDP}>
