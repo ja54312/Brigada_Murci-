@@ -13,7 +13,13 @@ const nextConfig = {
     prependData: `@import "main.sass"`,
   },
   images: {
-    domains: ["res.cloudinary.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+        port: "",
+      },
+    ],
   },
 };
 

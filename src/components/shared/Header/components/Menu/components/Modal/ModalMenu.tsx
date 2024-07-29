@@ -16,7 +16,7 @@ export const ModalMenu = ({ isOpenModal, closeModal }) => {
     const [visible, setVisible] = useState(false)
     const [visible02, setVisible02] = useState(false)
 
-    if (!isOpenModal) return null;
+    //if (!isOpenModal) return null;
 
     const gotoRoute = () => {
         setVisible(false)
@@ -34,6 +34,10 @@ export const ModalMenu = ({ isOpenModal, closeModal }) => {
 
     const cx = classNames.bind(styles);
 
+    const modalStyles = cx('visible', {
+        'modal': isOpenModal,
+    });
+    //console.log(modalStyles)
     const arrowStyles = cx('containerArrow', {
         'openArrow': visible,
     });
@@ -44,7 +48,7 @@ export const ModalMenu = ({ isOpenModal, closeModal }) => {
 
 
     return (
-        <div className={styles.modal}>
+        <div className={modalStyles}>
             <div className={styles.modal_content}>
                 <div className={styles.containerClose}>
                     <span className={styles.close} onClick={closeModal}>&times;</span>
