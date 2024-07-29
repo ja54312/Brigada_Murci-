@@ -22,11 +22,13 @@ interface CardProps {
     }
 }
 
-const urlImage = '/photos/cuquita.png'
 
 export const Card: React.FC<CardProps> = ({ perro }) => {
 
     const urlCard = `/adoptables/${perro.id}`
+    //console.log('perro', perro)
+    const urlImage = perro.urlimg
+
 
     return (
         <div className={styles.Card}>

@@ -12,6 +12,9 @@ const nextConfig = {
     includePaths: [join(__dirname, "src/sass")],
     prependData: `@import "main.sass"`,
   },
+  images: {
+    domains: ["res.cloudinary.com"],
+  },
 };
 
 export default nextConfig;
