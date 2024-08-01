@@ -42,7 +42,7 @@ const dataPerritos: DataObject[] = [
         conviveBaby: true,
         conviveDog: true,
         conviveCat: true,
-        desc: "Paseaba por las calles con un peso muy bajo, mis huesitos se marcaban por lo delgada que estaba. Fui rescatada la Brigada Murci, me proporcionó alimento y un lugar cálido para descansar. Estoy muy agradecida y soy una perrita muy tranquila y dócil. Si llevas un estilo de vida relajado, soy la compañera ideal para ti.",
+        desc: "Fuí rescatada y Brigada Murci me proporcionó alimento y paseaba por las calles con un peso muy bajo, mis huesitos se marcaban por lo delgada que estaba. Fui rescatada la Brigada Murci, me proporcionó alimento y un lugar cálido para descansar. Estoy muy agradecida y soy una perrita muy tranquila y dócil. Si llevas un estilo de vida relajado, soy la compañera ideal para ti.",
         urlimg: "https://res.cloudinary.com/dzblfpxug/image/upload/v1722285414/Bella_oya6xi.png"
     },
     {

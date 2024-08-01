@@ -7,7 +7,7 @@ export const InfoPDP = ({ mascota }) => {
         <section className={styles.InfoPDP}>
             <div className={styles.containerInfo}>
                 <div className={styles.containerTitle}>
-                    <span>Información:</span>
+                    <span>Acerca de mi:</span>
                 </div>
                 <div className={styles.containerText}>
                     <p>{mascota.desc}</p>

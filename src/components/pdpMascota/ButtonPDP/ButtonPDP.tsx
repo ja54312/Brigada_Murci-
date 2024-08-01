@@ -1,5 +1,6 @@
 //component
 import Image from 'next/image'
+import Link from 'next/link'
 //styles
 import styles from './ButtonPDP.module.sass'
 
@@ -9,18 +10,20 @@ export const ButtonPDP = () => {
     return (
         <section className={styles.ButtonPDP}>
             <div className={styles.containerButton}>
-                <div className={styles.button}>
-                    <div className={styles.containerText}>
-                        <span>Adóptame</span>
+                <Link href='/cuestionario-pre-adopcion'>
+                    <div className={styles.button}>
+                        <div className={styles.containerText}>
+                            <span>Adóptame</span>
+                        </div>
+                        <div className={styles.containerImg}>
+                            <Image
+                                src={urlIconHuellita}
+                                alt='huellita'
+                                fill
+                            />
+                        </div>
                     </div>
-                    <div className={styles.containerImg}>
-                        <Image
-                            src={urlIconHuellita}
-                            alt='huellita'
-                            fill
-                        />
-                    </div>
-                </div>
+                </Link>
             </div>
         </section>
     )
