@@ -1,15 +1,13 @@
 //components
 import Image from 'next/image'
 import { StatsConvive } from './components/StatsConvive'
+import { StatsStars } from './components/StatsStars'
 //styles
 import styles from './StatsPDP.module.sass'
 
 const urlIconEdad = '/Icons/IconEdad.svg'
 const urlIconPeso = '/Icons/IconPeso.svg'
 const urlIconTalla = '/Icons/IconTalla.svg'
-const urlIconEnergyFull = '/Icons/energyFull.svg'
-const urlIconEnergyEmpty = '/Icons/energyEmpty.svg'
-
 
 export const StatsPDP = ({ mascota }) => {
 
@@ -72,48 +70,7 @@ export const StatsPDP = ({ mascota }) => {
                     </div>
                 </div>
                 <div className={styles.containerRules}>
-                    <div className={styles.containerEnergy}>
-                        <div className={styles.containerText}>
-                            <span>Energía</span>
-                        </div>
-                        <div className={styles.containerImages}>
-                            <div className={styles.containerImage}>
-                                <Image
-                                    src={urlIconEnergyFull}
-                                    alt='iconEnergyFull'
-                                    fill
-                                />
-                            </div>
-                            <div className={styles.containerImage}>
-                                <Image
-                                    src={urlIconEnergyFull}
-                                    alt='iconEnergyFull'
-                                    fill
-                                />
-                            </div>
-                            <div className={styles.containerImage}>
-                                <Image
-                                    src={urlIconEnergyFull}
-                                    alt='iconEnergyFull'
-                                    fill
-                                />
-                            </div>
-                            <div className={styles.containerImage}>
-                                <Image
-                                    src={urlIconEnergyFull}
-                                    alt='iconEnergyFull'
-                                    fill
-                                />
-                            </div>
-                            <div className={styles.containerImage}>
-                                <Image
-                                    src={urlIconEnergyEmpty}
-                                    alt='iconEnergyEmpty'
-                                    fill
-                                />
-                            </div>
-                        </div>
-                    </div>
+                    <StatsStars mascota={mascota} />
                     <StatsConvive mascota={mascota} />
                 </div>
             </div>

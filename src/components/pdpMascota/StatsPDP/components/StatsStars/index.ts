@@ -1,0 +1,1 @@
+export { StatsStars } from "./StatsStars";
