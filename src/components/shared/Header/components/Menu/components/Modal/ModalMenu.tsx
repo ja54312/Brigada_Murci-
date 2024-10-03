@@ -1,6 +1,6 @@
 "use client"
 //hooks
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 //components
 import Image from 'next/image';
 import Link from 'next/link';
@@ -15,6 +15,7 @@ export const ModalMenu = ({ isOpenModal, closeModal }) => {
 
     const [visible, setVisible] = useState(false)
     const [visible02, setVisible02] = useState(false)
+    const [shouldRender, setShouldRender] = useState(isOpenModal);
 
     //if (!isOpenModal) return null;
 
@@ -32,10 +33,22 @@ export const ModalMenu = ({ isOpenModal, closeModal }) => {
         setVisible02(!visible02)
     }
 
+    useEffect(() => {
+        if (isOpenModal) {
+            setShouldRender(true);
+            setTimeout(() => setVisible(true), 10);
+        } else {
+            setVisible(false);
+            setTimeout(() => setShouldRender(false), 300);
+        }
+    }, [isOpenModal]);
+
     const cx = classNames.bind(styles);
 
-    const modalStyles = cx('visible', {
-        'modal': isOpenModal,
+    const modalStyles = cx({
+        [styles.modal]: true,
+        [styles.open]: visible,
+        [styles.close]: !visible && shouldRender,
     });
     //console.log(modalStyles)
     const arrowStyles = cx('containerArrow', {
@@ -46,12 +59,13 @@ export const ModalMenu = ({ isOpenModal, closeModal }) => {
         'openArrow': visible02,
     });
 
+    if (!shouldRender) return null;
 
     return (
         <div className={modalStyles}>
             <div className={styles.modal_content}>
                 <div className={styles.containerClose}>
-                    <span className={styles.close} onClick={closeModal}>&times;</span>
+                    <span className={styles.close} onClick={closeModal} >&times;</span>
                 </div>
                 <div className={styles.ContainerSimpleTitle}>
                     <Link href='/' onClick={gotoRoute}>
