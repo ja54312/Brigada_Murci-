@@ -103,7 +103,7 @@ const dataPerritos: DataObject[] = [
         conviveDog: true,
         conviveCat: true,
         desc: "Soy una princesa de la montaña. Hace un año me encontraron y sin dudarlo me llevaron a casa. Convivo con todo tipo de perritos y lo que más deseo es tener unos hermanos perrunos para jugar. Me encanta correr por el jardín, jugar con pelotas y recibir caricias. Soy una perrita muy cariñosa y leal, y prometo llenar tu vida de amor y compañía.",
-        urlimg: "https://res.cloudinary.com/dzblfpxug/image/upload/v1722286892/Tokio_khjjk9.png"
+        urlimg: "https://res.cloudinary.com/dzblfpxug/image/upload/v1728774698/tokio_ivtzyx.jpg"
     },
     {
         id: "Kimichi",
@@ -118,7 +118,7 @@ const dataPerritos: DataObject[] = [
         conviveDog: true,
         conviveCat: false,
         desc: "Crecí sin mi mami perruna y mi comportamiento con otros perritos era un poco hostil y fui enviada a un campamento de socialización, ahora camino perfectamente con correa y convivo con otros perritos de todas las edades y tamaños. Soy una compañera de viaje perfecta, busco a una persona aventurera y activa para unirme a su vida.",
-        urlimg: "https://res.cloudinary.com/dzblfpxug/image/upload/v1722286839/Kimichi_kuxwu1.png"
+        urlimg: "https://res.cloudinary.com/dzblfpxug/image/upload/v1728774661/kimichi_erju7a.jpg"
     },
     {
         id: "Cuca",
